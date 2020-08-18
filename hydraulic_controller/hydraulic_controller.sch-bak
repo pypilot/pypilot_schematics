@@ -1,0 +1,1038 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date "29 nov 2017"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2500 2900 2200 1800
+U 59D8755C
+F0 "sense" 60
+F1 "sense.sch" 60
+F2 "Shunt" I R 4700 4650 60 
+F3 "Power" I L 2500 3550 60 
+F4 "PWMAH" O R 4700 3150 60 
+F5 "PWMBL" O R 4700 4450 60 
+F6 "PWMAL" O R 4700 3250 60 
+F7 "PWMBH" O R 4700 4350 60 
+F8 "PWMCL" O L 2500 4400 60 
+$EndSheet
+$Comp
+L Device:R 500uOhm1
+U 1 1 5A243C05
+P 6850 5100
+F 0 "500uOhm1" V 6950 5100 50  0000 C CNN
+F 1 "R" V 6850 5100 50  0000 C CNN
+F 2 "hydraulic_footprints:WSLF2512" V 6780 5100 50  0001 C CNN
+F 3 "" H 6850 5100 50  0001 C CNN
+	1    6850 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:FUSE F1
+U 1 1 5A242691
+P 1350 1200
+F 0 "F1" H 1350 1417 40  0000 C CNN
+F 1 "FUSE" H 1350 1341 40  0000 C CNN
+F 2 "hydraulic_footprints:MAXI FUSE CLIP" H 1350 1200 60  0001 C CNN
+F 3 "" H 1350 1200 60  0000 C CNN
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C4
+U 1 1 5A243CA3
+P 5900 5700
+F 0 "C4" H 6035 5746 50  0000 L CNN
+F 1 ".1uF" H 6035 5655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 5900 5700 60  0001 C CNN
+F 3 "" H 5900 5700 60  0000 C CNN
+	1    5900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5500 6850 5250
+$Comp
+L Device:Q_NMOS_GDS Q4
+U 1 1 5A8F65C0
+P 7900 3350
+F 0 "Q4" H 7800 3200 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 8151 3350 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 8100 3450 50  0001 C CNN
+F 3 "" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pypilot_components:ncp5106b U2
+U 1 1 5A92181A
+P 5450 2900
+F 0 "U2" H 5450 2997 60  0000 C CNN
+F 1 "NCP5106B" H 5350 2850 60  0000 C CNN
+F 2 "freetronics_footprints:SO08_4mm" H 5650 2350 60  0001 C CNN
+F 3 "" H 5450 2900 60  0001 C CNN
+	1    5450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3150 5050 3150
+Wire Wire Line
+	4700 3250 5050 3250
+$Comp
+L pypilot_components:ncp5106b U3
+U 1 1 5A92238E
+P 5450 4100
+F 0 "U3" H 5450 4197 60  0000 C CNN
+F 1 "NCP5106B" H 5400 4050 60  0000 C CNN
+F 2 "freetronics_footprints:SO08_4mm" H 5650 3550 60  0001 C CNN
+F 3 "" H 5450 4100 60  0001 C CNN
+	1    5450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4350 5050 4350
+Wire Wire Line
+	5050 4450 4700 4450
+$Comp
+L power:GND #PWR019
+U 1 1 5A922EA5
+P 5050 4550
+F 0 "#PWR019" H 5050 4300 50  0001 C CNN
+F 1 "GND" H 4900 4500 50  0000 C CNN
+F 2 "" H 5050 4550 50  0001 C CNN
+F 3 "" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5A923390
+P 5050 3350
+F 0 "#PWR017" H 5050 3100 50  0001 C CNN
+F 1 "GND" H 4900 3300 50  0000 C CNN
+F 2 "" H 5050 3350 50  0001 C CNN
+F 3 "" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q3
+U 1 1 5A9241F6
+P 7900 2950
+F 0 "Q3" H 7800 2850 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 8151 2950 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 8100 3050 50  0001 C CNN
+F 3 "" H 7900 2950 50  0001 C CNN
+	1    7900 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5A926095
+P 6750 2950
+F 0 "Q1" H 7001 2950 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 7001 2950 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 6950 3050 50  0001 C CNN
+F 3 "" H 6750 2950 50  0001 C CNN
+	1    6750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5A926177
+P 6750 3350
+F 0 "Q2" H 6750 3200 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 7001 3350 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 6950 3450 50  0001 C CNN
+F 3 "" H 6750 3350 50  0001 C CNN
+	1    6750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5A92A721
+P 6850 5650
+F 0 "#PWR023" H 6850 5400 50  0001 C CNN
+F 1 "GND" H 6700 5600 50  0000 C CNN
+F 2 "" H 6850 5650 50  0001 C CNN
+F 3 "" H 6850 5650 50  0001 C CNN
+	1    6850 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C6
+U 1 1 5A92BC82
+P 6000 4250
+F 0 "C6" H 6050 4500 50  0000 L CNN
+F 1 ".22uF" H 6050 4400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 6000 4250 60  0001 C CNN
+F 3 "" H 6000 4250 60  0000 C CNN
+	1    6000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4050 6000 4050
+$Comp
+L freetronics_schematic:CAP C14
+U 1 1 5A92CC13
+P 4850 3950
+F 0 "C14" H 4750 4100 50  0000 L CNN
+F 1 "2.2uF" H 4850 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_3216Metric_Pad1.24x1.80mm_HandSolder" H 4850 3950 60  0001 C CNN
+F 3 "" H 4850 3950 60  0000 C CNN
+	1    4850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4050 5050 4050
+Wire Wire Line
+	4850 3750 5050 3750
+$Comp
+L power:GND #PWR015
+U 1 1 5A932469
+P 4850 4150
+F 0 "#PWR015" H 4850 3900 50  0001 C CNN
+F 1 "GND" H 4700 4100 50  0000 C CNN
+F 2 "" H 4850 4150 50  0001 C CNN
+F 3 "" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C5
+U 1 1 5A93274F
+P 6000 3050
+F 0 "C5" H 6050 3300 50  0000 L CNN
+F 1 ".22uF" H 6050 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 6000 3050 60  0001 C CNN
+F 3 "" H 6000 3050 60  0000 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C13
+U 1 1 5A93275D
+P 4850 2750
+F 0 "C13" H 4750 2900 50  0000 L CNN
+F 1 "2.2uF" H 4850 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_3216Metric_Pad1.24x1.80mm_HandSolder" H 4850 2750 60  0001 C CNN
+F 3 "" H 4850 2750 60  0000 C CNN
+	1    4850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2550 5050 2550
+$Comp
+L power:GND #PWR014
+U 1 1 5A9349E7
+P 4850 2950
+F 0 "#PWR014" H 4850 2700 50  0001 C CNN
+F 1 "GND" H 4700 2900 50  0000 C CNN
+F 2 "" H 4850 2950 50  0001 C CNN
+F 3 "" H 4850 2950 50  0001 C CNN
+	1    4850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5A93567C
+P 6200 3350
+F 0 "R16" V 6300 3300 50  0000 C CNN
+F 1 "47" V 6200 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6200 3350 50  0001 C CNN
+F 3 "" H 6200 3350 50  0001 C CNN
+	1    6200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5A937DB9
+P 6250 3150
+F 0 "R17" V 6150 3100 50  0000 C CNN
+F 1 "47" V 6250 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6250 3150 50  0001 C CNN
+F 3 "" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3150 6500 2950
+Wire Wire Line
+	6500 2950 6550 2950
+Wire Wire Line
+	6600 3150 6600 3250
+Wire Wire Line
+	6600 3250 6000 3250
+$Comp
+L Device:R R19
+U 1 1 5A939DB0
+P 6250 4350
+F 0 "R19" V 6150 4350 50  0000 C CNN
+F 1 "47" V 6250 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6250 4350 50  0001 C CNN
+F 3 "" H 6250 4350 50  0001 C CNN
+	1    6250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5A939E5C
+P 6200 4550
+F 0 "R18" V 6300 4550 50  0000 C CNN
+F 1 "47" V 6200 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6200 4550 50  0001 C CNN
+F 3 "" H 6200 4550 50  0001 C CNN
+	1    6200 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 2950 8100 2950
+Wire Wire Line
+	5850 4450 6000 4450
+$Comp
+L hydraulic_controller-rescue:TVS-pypilot_components TVS1
+U 1 1 5A94790E
+P 7350 3450
+F 0 "TVS1" H 7200 3550 40  0000 L CNN
+F 1 "TVS" H 7388 3528 40  0000 L CNN
+F 2 "hydraulic_footprints:tvs" V 7426 3528 60  0001 L CNN
+F 3 "" H 7300 3450 60  0000 C CNN
+	1    7350 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3550 7800 3650
+Wire Wire Line
+	6850 5500 6850 5650
+Wire Wire Line
+	4700 4650 4850 4650
+$Comp
+L power:GND #PWR020
+U 1 1 5A9665C5
+P 5900 5900
+F 0 "#PWR020" H 5900 5650 50  0001 C CNN
+F 1 "GND" H 5750 5850 50  0000 C CNN
+F 2 "" H 5900 5900 50  0001 C CNN
+F 3 "" H 5900 5900 50  0001 C CNN
+	1    5900 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C9
+U 1 1 5A97FE39
+P 9900 3350
+F 0 "C9" H 9950 3450 50  0000 L CNN
+F 1 "4.7uF" H 9950 3250 50  0000 L CNN
+F 2 "hydraulic_footprints:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9900 3350 60  0001 C CNN
+F 3 "" H 9900 3350 60  0000 C CNN
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3550 9900 3650
+$Comp
+L Device:Q_NMOS_GDS Q5
+U 1 1 5A99788A
+P 1950 2150
+F 0 "Q5" V 2000 2350 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 2201 2150 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 2150 2250 50  0001 C CNN
+F 3 "" H 1950 2150 50  0001 C CNN
+	1    1950 2150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1750 2250 1700 2250
+Wire Wire Line
+	1600 1200 1700 1200
+$Comp
+L freetronics_schematic:C_POL C12
+U 1 1 5A9A7149
+P 8450 3150
+F 0 "C12" H 8300 3050 50  0000 L CNN
+F 1 "330uF" H 8200 3350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D16.0mm_P7.50mm" H 8450 3150 60  0001 C CNN
+F 3 "" H 8450 3150 60  0000 C CNN
+	1    8450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3150 6500 3150
+Wire Wire Line
+	5850 3350 6050 3350
+Wire Wire Line
+	5850 4350 6100 4350
+Connection ~ 5050 4050
+Wire Wire Line
+	5050 4050 5050 4250
+Wire Wire Line
+	5850 4250 5850 4050
+Wire Wire Line
+	5050 3750 5050 4050
+Wire Wire Line
+	5850 3050 5850 2850
+Connection ~ 6000 3250
+Wire Wire Line
+	6000 3250 5850 3250
+Wire Wire Line
+	5850 3150 6100 3150
+Wire Wire Line
+	6350 3350 6550 3350
+Wire Wire Line
+	8300 3350 8100 3350
+Wire Wire Line
+	5850 4550 6050 4550
+Wire Wire Line
+	6600 3150 6850 3150
+Wire Wire Line
+	8050 3150 7800 3150
+$Comp
+L freetronics_schematic:CAP C8
+U 1 1 5A95406C
+P 9650 3150
+F 0 "C8" H 9700 3050 50  0000 L CNN
+F 1 "4.7uF" H 9700 3250 50  0000 L CNN
+F 2 "hydraulic_footprints:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9650 3150 60  0001 C CNN
+F 3 "" H 9650 3150 60  0000 C CNN
+	1    9650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR021
+U 1 1 5A9874C4
+P 2450 1200
+F 0 "#PWR021" H 2450 1050 50  0001 C CNN
+F 1 "VCC" H 2467 1373 50  0000 C CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5A98A260
+P 2400 2250
+F 0 "#PWR02" H 2400 2000 50  0001 C CNN
+F 1 "GND" H 2550 2250 50  0000 C CNN
+F 2 "" H 2400 2250 50  0001 C CNN
+F 3 "" H 2400 2250 50  0001 C CNN
+	1    2400 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3150 7650 3150
+Connection ~ 7800 3150
+Wire Wire Line
+	8300 3350 8300 4550
+Wire Wire Line
+	8300 4550 6350 4550
+Wire Wire Line
+	8050 4450 6000 4450
+Wire Wire Line
+	8050 3150 8050 4450
+Connection ~ 6000 4450
+Wire Wire Line
+	8150 4350 8150 2950
+Wire Wire Line
+	6400 4350 8150 4350
+Wire Wire Line
+	6850 3550 6850 3650
+Wire Wire Line
+	7800 3650 6850 3650
+Connection ~ 6850 3650
+Wire Wire Line
+	6850 3650 6850 4800
+$Comp
+L power:VCC #PWR022
+U 1 1 5A9CC524
+P 7350 2750
+F 0 "#PWR022" H 7350 2600 50  0001 C CNN
+F 1 "VCC" H 7367 2923 50  0000 C CNN
+F 2 "" H 7350 2750 50  0001 C CNN
+F 3 "" H 7350 2750 50  0001 C CNN
+	1    7350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2750 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	7350 2750 7800 2750
+Wire Wire Line
+	7800 2750 8450 2750
+Connection ~ 7800 2750
+Wire Wire Line
+	9900 2750 9900 3150
+Connection ~ 7800 3650
+$Comp
+L freetronics_schematic:C_POL C10
+U 1 1 5A9DC496
+P 8650 3400
+F 0 "C10" H 8500 3300 50  0000 L CNN
+F 1 "330uF" H 8650 3550 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D16.0mm_P7.50mm" H 8650 3400 60  0001 C CNN
+F 3 "" H 8650 3400 60  0000 C CNN
+	1    8650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:C_POL C11
+U 1 1 5A9DC63F
+P 8850 3000
+F 0 "C11" H 8700 2900 50  0000 L CNN
+F 1 "330uF" H 8900 3150 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D16.0mm_P7.50mm" H 8850 3000 60  0001 C CNN
+F 3 "" H 8850 3000 60  0000 C CNN
+	1    8850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3350 9650 3650
+Connection ~ 9650 3650
+Wire Wire Line
+	9650 3650 9900 3650
+Wire Wire Line
+	9650 2950 9650 2750
+Connection ~ 9650 2750
+Wire Wire Line
+	9650 2750 9900 2750
+Wire Wire Line
+	9250 2750 9650 2750
+Wire Wire Line
+	9250 3600 9250 3650
+Connection ~ 9250 3650
+Wire Wire Line
+	9250 3650 9650 3650
+Wire Wire Line
+	8850 2800 8850 2750
+Connection ~ 8850 2750
+Wire Wire Line
+	8850 3200 8850 3650
+Wire Wire Line
+	7800 3650 8450 3650
+Connection ~ 8850 3650
+Wire Wire Line
+	8650 3600 8650 3650
+Connection ~ 8650 3650
+Wire Wire Line
+	8650 3650 8850 3650
+Wire Wire Line
+	8650 3200 8650 2750
+Connection ~ 8650 2750
+Wire Wire Line
+	8650 2750 8850 2750
+Wire Wire Line
+	8450 2950 8450 2750
+Connection ~ 8450 2750
+Wire Wire Line
+	8450 2750 8650 2750
+Wire Wire Line
+	8450 3350 8450 3650
+Connection ~ 8450 3650
+Wire Wire Line
+	8450 3650 8650 3650
+$Comp
+L hydraulic_controller-rescue:TVS-pypilot_components TVS2
+U 1 1 5AB1B40C
+P 1700 1700
+F 0 "TVS2" H 1550 1800 40  0000 L CNN
+F 1 "TVS" H 1738 1778 40  0000 L CNN
+F 2 "freetronics_footprints:DIODE-1N4001" V 1776 1778 60  0001 L CNN
+F 3 "" H 1650 1700 60  0000 C CNN
+	1    1700 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 2250 1700 1950
+Connection ~ 1700 2250
+Wire Wire Line
+	1700 1450 1700 1200
+Connection ~ 1700 1200
+Wire Wire Line
+	6000 2850 5850 2850
+Connection ~ 5850 2850
+Wire Wire Line
+	5400 2850 5050 2850
+Wire Wire Line
+	5050 2550 5050 2850
+Connection ~ 5050 2850
+Wire Wire Line
+	5050 2850 5050 3050
+$Comp
+L Diode:1N4001 D2
+U 1 1 5AB669A9
+P 5550 2850
+F 0 "D2" H 5550 2634 50  0000 C CNN
+F 1 "1N4001" H 5550 2725 50  0000 C CNN
+F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 5550 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5550 2850 50  0001 C CNN
+	1    5550 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2850 5850 2850
+$Comp
+L Diode:1N4001 D1
+U 1 1 5AB6F720
+P 5600 4050
+F 0 "D1" H 5600 3834 50  0000 C CNN
+F 1 "1N4001" H 5600 3925 50  0000 C CNN
+F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 5600 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5600 4050 50  0001 C CNN
+	1    5600 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 4050 5850 4050
+Connection ~ 5850 4050
+Wire Wire Line
+	6100 4800 6850 4800
+Connection ~ 6850 4800
+Wire Wire Line
+	6850 4800 6850 4950
+Connection ~ 6850 5500
+$Comp
+L power:GND #PWR03
+U 1 1 5AB7697F
+P 6000 4800
+F 0 "#PWR03" H 6000 4550 50  0001 C CNN
+F 1 "GND" H 5850 4750 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5AB76A6E
+P 5650 5500
+F 0 "#PWR011" H 5650 5350 50  0001 C CNN
+F 1 "+5V" H 5665 5673 50  0000 C CNN
+F 2 "" H 5650 5500 50  0001 C CNN
+F 3 "" H 5650 5500 50  0001 C CNN
+	1    5650 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5500 5900 5500
+Wire Wire Line
+	5900 4800 4900 4800
+Wire Wire Line
+	4900 4800 4850 4650
+$Comp
+L power:+12V #PWR027
+U 1 1 5B2946DC
+P 5050 3750
+F 0 "#PWR027" H 5050 3600 50  0001 C CNN
+F 1 "+12V" H 5065 3923 50  0000 C CNN
+F 2 "" H 5050 3750 50  0001 C CNN
+F 3 "" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3750
+$Comp
+L power:+12V #PWR026
+U 1 1 5B294920
+P 5050 2550
+F 0 "#PWR026" H 5050 2400 50  0001 C CNN
+F 1 "+12V" H 5065 2723 50  0000 C CNN
+F 2 "" H 5050 2550 50  0001 C CNN
+F 3 "" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 2550
+$Comp
+L power:+12V #PWR018
+U 1 1 5B295B93
+P 1600 2750
+F 0 "#PWR018" H 1600 2600 50  0001 C CNN
+F 1 "+12V" H 1450 2850 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5B295CD0
+P 2300 2750
+F 0 "#PWR01" H 2300 2600 50  0001 C CNN
+F 1 "VCC" H 2317 2923 50  0000 C CNN
+F 2 "" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5B29C6C4
+P 1600 3450
+F 0 "#PWR016" H 1600 3200 50  0001 C CNN
+F 1 "GND" H 1750 3400 50  0000 C CNN
+F 2 "" H 1600 3450 50  0001 C CNN
+F 3 "" H 1600 3450 50  0001 C CNN
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2250 1050 2250
+Wire Wire Line
+	900  1200 950  1200
+$Comp
+L Device:Q_NMOS_GDS Q6
+U 1 1 5B2B88CB
+P 1650 4400
+F 0 "Q6" H 1901 4400 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 1901 4400 50  0001 C CNN
+F 2 "hydraulic_footprints:TO-220-3_Horizontal_nobolt" H 1850 4500 50  0001 C CNN
+F 3 "" H 1650 4400 50  0001 C CNN
+	1    1650 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5B2B8A22
+P 2150 4400
+F 0 "R22" V 2050 4400 50  0000 C CNN
+F 1 "560" V 2150 4400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 2150 4400 50  0001 C CNN
+F 3 "" H 2150 4400 50  0001 C CNN
+	1    2150 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 4400 1900 4400
+$Comp
+L Device:R R21
+U 1 1 5B2C1B20
+P 1900 4550
+F 0 "R21" V 1800 4550 50  0000 C CNN
+F 1 "10k" V 1900 4550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 1900 4550 50  0001 C CNN
+F 3 "" H 1900 4550 50  0001 C CNN
+	1    1900 4550
+	-1   0    0    1   
+$EndComp
+Connection ~ 1900 4400
+Wire Wire Line
+	1900 4400 1850 4400
+$Comp
+L freetronics_schematic:FUSE F2
+U 1 1 5B2C1DA0
+P 1300 4200
+F 0 "F2" H 1350 4250 40  0000 C CNN
+F 1 "POLYFUSE" H 1300 4100 40  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1300 4356 60  0001 C CNN
+F 3 "" H 1300 4200 60  0000 C CNN
+	1    1300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5B2C20D6
+P 1900 4700
+F 0 "#PWR030" H 1900 4450 50  0001 C CNN
+F 1 "GND" H 1750 4650 50  0000 C CNN
+F 2 "" H 1900 4700 50  0001 C CNN
+F 3 "" H 1900 4700 50  0001 C CNN
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5B2C2665
+P 850 4200
+F 0 "J10" H 930 4242 50  0000 L CNN
+F 1 "Clutch" H 930 4151 50  0000 L CNN
+F 2 "Connector_Pin:Pin_d1.4mm_L8.5mm_W2.8mm_FlatFork" H 850 4200 50  0001 C CNN
+F 3 "~" H 850 4200 50  0001 C CNN
+	1    850  4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4400 2500 4400
+Wire Wire Line
+	1900 4700 1550 4700
+Wire Wire Line
+	1550 4700 1550 4600
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5B2EC37B
+P 850 2250
+F 0 "J6" H 930 2292 50  0000 L CNN
+F 1 "Pwr -" H 930 2201 50  0000 L CNN
+F 2 "hydraulic_footprints:Power" H 850 2250 50  0001 C CNN
+F 3 "~" H 850 2250 50  0001 C CNN
+	1    850  2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2250 1700 2250
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5B2EC70F
+P 700 1200
+F 0 "J7" H 780 1242 50  0000 L CNN
+F 1 "Pwr +" H 780 1151 50  0000 L CNN
+F 2 "hydraulic_footprints:Power" H 700 1200 50  0001 C CNN
+F 3 "~" H 700 1200 50  0001 C CNN
+	1    700  1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:CAP C7
+U 1 1 5B2EF3C0
+P 9250 3400
+F 0 "C7" H 9300 3300 50  0000 L CNN
+F 1 "4.7uF" H 9300 3500 50  0000 L CNN
+F 2 "hydraulic_footprints:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9250 3400 60  0001 C CNN
+F 3 "" H 9250 3400 60  0000 C CNN
+	1    9250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3200 9250 2750
+Connection ~ 9250 2750
+Wire Wire Line
+	8850 3650 9250 3650
+Wire Wire Line
+	8850 2750 9250 2750
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5B295F23
+P 1900 2550
+F 0 "J5" V 1866 2362 50  0000 R CNN
+F 1 "12v REG/R" V 2000 2700 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1900 2550 50  0001 C CNN
+F 3 "~" H 1900 2550 50  0001 C CNN
+	1    1900 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5B9327AD
+P 1600 3300
+F 0 "R13" H 1450 3300 50  0000 C CNN
+F 1 "3900" V 1600 3300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 1600 3300 50  0001 C CNN
+F 3 "" H 1600 3300 50  0001 C CNN
+	1    1600 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5B939D7C
+P 1600 2950
+F 0 "R14" H 1750 2950 50  0000 C CNN
+F 1 "560" V 1600 2950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 1600 2950 50  0001 C CNN
+F 3 "" H 1600 2950 50  0001 C CNN
+	1    1600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1850 1950 1850
+Wire Wire Line
+	1950 1850 1950 1950
+Wire Wire Line
+	1700 1200 1950 1200
+$Comp
+L freetronics_schematic:CAP C3
+U 1 1 5B94B312
+P 2250 1550
+F 0 "C3" H 2300 1800 50  0000 L CNN
+F 1 "4.7uF" H 2300 1700 50  0000 L CNN
+F 2 "hydraulic_footprints:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2250 1550 60  0001 C CNN
+F 3 "" H 2250 1550 60  0000 C CNN
+	1    2250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5B94B3CC
+P 1950 1550
+F 0 "R15" V 1850 1500 50  0000 C CNN
+F 1 "10k" V 1950 1550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 1950 1550 50  0001 C CNN
+F 3 "" H 1950 1550 50  0001 C CNN
+	1    1950 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1350 2250 1200
+Connection ~ 2250 1200
+Wire Wire Line
+	2250 1200 2450 1200
+Wire Wire Line
+	2250 1750 2250 1850
+Wire Wire Line
+	1950 1700 1950 1850
+Connection ~ 1950 1850
+Wire Wire Line
+	1950 1400 1950 1200
+Connection ~ 1950 1200
+Wire Wire Line
+	1950 1200 2250 1200
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5B9762D5
+P 7200 3150
+F 0 "J9" H 7200 3250 50  0000 L CNN
+F 1 "A" H 7150 3050 50  0000 L CNN
+F 2 "hydraulic_footprints:Power" H 7200 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5B977518
+P 7450 3150
+F 0 "J8" H 7400 3050 50  0000 L CNN
+F 1 "B" H 7450 3250 50  0000 L CNN
+F 2 "hydraulic_footprints:Power" H 7450 3150 50  0001 C CNN
+F 3 "~" H 7450 3150 50  0001 C CNN
+	1    7450 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3150 7000 3150
+Connection ~ 6850 3150
+Wire Wire Line
+	7000 3150 7000 3450
+Wire Wire Line
+	7000 3450 7100 3450
+Connection ~ 7000 3150
+Wire Wire Line
+	7650 3450 7650 3150
+Connection ~ 7650 3150
+Wire Wire Line
+	7650 3450 7600 3450
+$Comp
+L Diode:1N4001 Z1
+U 1 1 5B9930B2
+P 2250 2050
+F 0 "Z1" V 2200 2200 50  0000 C CNN
+F 1 "10v" V 2350 2200 50  0000 C CNN
+F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 2250 1875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2250 2050 50  0001 C CNN
+	1    2250 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1900 2250 1850
+Wire Wire Line
+	2150 2250 2250 2250
+Connection ~ 2250 1850
+Wire Wire Line
+	2250 2200 2250 2250
+Connection ~ 2250 2250
+Wire Wire Line
+	2250 2250 2400 2250
+Wire Wire Line
+	2000 2750 2000 3550
+Wire Wire Line
+	2000 3550 2500 3550
+Wire Wire Line
+	1600 2750 1600 2800
+Wire Wire Line
+	1900 2750 1900 2800
+Wire Wire Line
+	1900 2800 1600 2800
+Connection ~ 1600 2800
+Wire Wire Line
+	1800 2750 1800 3100
+Wire Wire Line
+	1800 3100 1600 3100
+Wire Wire Line
+	1600 3100 1600 3150
+Connection ~ 1600 3100
+$Comp
+L Diode:1N4001 D4
+U 1 1 5C63E5B8
+P 1050 4050
+F 0 "D4" V 900 3950 50  0000 C CNN
+F 1 "1N4001" H 1050 3925 50  0001 C CNN
+F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 1050 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1050 4050 50  0001 C CNN
+	1    1050 4050
+	0    1    1    0   
+$EndComp
+Connection ~ 1050 4200
+$Comp
+L power:VDD #PWR0101
+U 1 1 5C643D40
+P 1050 3900
+F 0 "#PWR0101" H 1050 3750 50  0001 C CNN
+F 1 "VDD" H 1067 4073 50  0000 C CNN
+F 2 "" H 1050 3900 50  0001 C CNN
+F 3 "" H 1050 3900 50  0001 C CNN
+	1    1050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0102
+U 1 1 5C643DAE
+P 950 1200
+F 0 "#PWR0102" H 950 1050 50  0001 C CNN
+F 1 "VDD" H 967 1373 50  0000 C CNN
+F 2 "" H 950 1200 50  0001 C CNN
+F 3 "" H 950 1200 50  0001 C CNN
+	1    950  1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 950  1200
+Wire Wire Line
+	950  1200 1100 1200
+Wire Wire Line
+	2000 2750 2300 2750
+Connection ~ 2000 2750
+$Comp
+L freetronics_schematic:CAP C15
+U 1 1 5D4788B9
+P 2300 2950
+F 0 "C15" H 2350 3200 50  0000 L CNN
+F 1 "4.7uF" H 2350 3100 50  0000 L CNN
+F 2 "hydraulic_footprints:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2300 2950 60  0001 C CNN
+F 3 "" H 2300 2950 60  0000 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 2750
+$Comp
+L power:GND #PWR0103
+U 1 1 5D4861CC
+P 2300 3150
+F 0 "#PWR0103" H 2300 2900 50  0001 C CNN
+F 1 "GND" H 2100 3150 50  0000 C CNN
+F 2 "" H 2300 3150 50  0001 C CNN
+F 3 "" H 2300 3150 50  0001 C CNN
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pypilot_components:INA180 U4
+U 1 1 5AB6FE5E
+P 6200 5150
+F 0 "U4" V 6100 5100 60  0000 R CNN
+F 1 "INA180" V 6250 5050 60  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6150 5500 60  0001 C CNN
+F 3 "" H 6200 5150 60  0000 C CNN
+	1    6200 5150
+	0    -1   1    0   
+$EndComp
+Connection ~ 5900 5500
+Wire Wire Line
+	6100 5500 6850 5500
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name tinypilot_footprints)(type KiCad)(uri "$(KIPRJMOD)/tinypilot_footprints.pretty")(options "")(descr ""))
+  (lib (name high_current_footprints)(type KiCad)(uri /home/sean/pypilot_schematics/high_current_controller/high_current_footprints.pretty)(options "")(descr ""))
+)

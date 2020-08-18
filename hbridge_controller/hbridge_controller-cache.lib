@@ -1,0 +1,386 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x01
+#
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x03
+#
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Q_NMOS_GDS
+#
+DEF Device_Q_NMOS_GDS Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "Device_Q_NMOS_GDS" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Thermistor
+#
+DEF Device_Thermistor TH 0 0 N Y 1 F N
+F0 "TH" 100 50 50 V V C CNN
+F1 "Device_Thermistor" -100 0 50 V V C BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 100 40 -100 0 1 8 N
+P 5 0 1 10 -75 125 -75 75 75 -75 75 -125 75 -125 N
+X ~ 1 0 200 100 D 50 50 1 1 P
+X ~ 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_1N4001
+#
+DEF Diode_1N4001 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4001" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# hbridge_controller-rescue_Arduino_Nano_v3.x-MCU_Module
+#
+DEF hbridge_controller-rescue_Arduino_Nano_v3.x-MCU_Module A 0 40 Y Y 1 F N
+F0 "A" -200 1025 50 H V R CNN
+F1 "hbridge_controller-rescue_Arduino_Nano_v3.x-MCU_Module" -200 950 50 H V R CNN
+F2 "Module:Arduino_Nano" 150 -950 50 H I L CNN
+F3 "" 0 -1000 50 H I C CNN
+$FPLIST
+ Arduino*Nano*
+$ENDFPLIST
+DRAW
+S -400 900 400 -900 0 1 10 f
+X D1/TX 1 -500 500 100 R 50 50 1 1 B
+X D7 10 -500 -100 100 R 50 50 1 1 B
+X D8 11 -500 -200 100 R 50 50 1 1 B
+X D9 12 -500 -300 100 R 50 50 1 1 B
+X D10 13 -500 -400 100 R 50 50 1 1 B
+X D11 14 -500 -500 100 R 50 50 1 1 B
+X D12 15 -500 -600 100 R 50 50 1 1 B
+X D13 16 -500 -700 100 R 50 50 1 1 B
+X 3V3 17 100 1000 100 D 50 50 1 1 w
+X AREF 18 500 200 100 L 50 50 1 1 I
+X A0 19 500 0 100 L 50 50 1 1 B
+X D0/RX 2 -500 600 100 R 50 50 1 1 B
+X A1 20 500 -100 100 L 50 50 1 1 B
+X A2 21 500 -200 100 L 50 50 1 1 B
+X A3 22 500 -300 100 L 50 50 1 1 B
+X A4 23 500 -400 100 L 50 50 1 1 B
+X A5 24 500 -500 100 L 50 50 1 1 B
+X A6 25 500 -600 100 L 50 50 1 1 B
+X A7 26 500 -700 100 L 50 50 1 1 B
+X +5V 27 200 1000 100 D 50 50 1 1 w
+X RESET 28 500 600 100 L 50 50 1 1 I
+X GND 29 100 -1000 100 U 50 50 1 1 W
+X RESET 3 500 500 100 L 50 50 1 1 I
+X VIN 30 -100 1000 100 D 50 50 1 1 W
+X GND 4 0 -1000 100 U 50 50 1 1 W
+X D2 5 -500 400 100 R 50 50 1 1 B
+X D3 6 -500 300 100 R 50 50 1 1 B
+X D4 7 -500 200 100 R 50 50 1 1 B
+X D5 8 -500 100 100 R 50 50 1 1 B
+X D6 9 -500 0 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# hbridge_controller-rescue_CAP-freetronics_schematic
+#
+DEF hbridge_controller-rescue_CAP-freetronics_schematic C 0 10 N Y 1 F N
+F0 "C" 50 100 50 H V L CNN
+F1 "hbridge_controller-rescue_CAP-freetronics_schematic" 50 -100 50 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ *_CAP
+ CAP_*
+ SM*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -100 -30 100 -30 N
+P 2 0 1 20 -100 30 100 30 N
+X ~ 1 0 200 170 D 40 40 1 1 P
+X ~ 2 0 -200 170 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# hbridge_controller-rescue_C_POL-freetronics_schematic
+#
+DEF hbridge_controller-rescue_C_POL-freetronics_schematic C 0 10 N N 1 F N
+F0 "C" 50 100 50 H V L CNN
+F1 "hbridge_controller-rescue_C_POL-freetronics_schematic" 50 -100 50 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ CAP_*
+$ENDFPLIST
+DRAW
+A 0 -200 180 563 1236 0 1 15 N 100 -50 -100 -50
+T 0 -50 100 80 0 0 0 + Normal 0 C C
+P 4 0 1 15 -100 50 100 50 50 50 50 50 N
+X + 1 0 200 150 D 40 40 1 1 P
+X - 2 0 -200 180 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# hbridge_controller-rescue_FUSE-freetronics_schematic
+#
+DEF hbridge_controller-rescue_FUSE-freetronics_schematic F 0 10 Y Y 1 F N
+F0 "F" 50 50 40 H V C CNN
+F1 "hbridge_controller-rescue_FUSE-freetronics_schematic" -100 -50 40 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+A -75 0 75 1 1799 0 1 0 N 0 0 -150 0
+A 75 0 75 -1799 -1 0 1 0 N 0 0 150 0
+X ~ 1 -250 0 100 R 40 40 1 1 I
+X ~ 2 250 0 100 L 40 40 1 1 I
+ENDDRAW
+ENDDEF
+#
+# hbridge_controller-rescue_TVS-pypilot_components
+#
+DEF hbridge_controller-rescue_TVS-pypilot_components TVS 0 40 N N 1 F N
+F0 "TVS" 50 100 40 H V C CNN
+F1 "hbridge_controller-rescue_TVS-pypilot_components" 50 -100 40 H V C CNN
+F2 "" -50 0 60 H V C CNN
+F3 "" -50 0 60 H V C CNN
+$FPLIST
+ DIODE_*
+ *_DIODE
+$ENDFPLIST
+DRAW
+P 2 0 1 6 0 50 0 -50 N
+P 3 0 1 0 -100 50 0 0 -100 -50 F
+P 3 0 1 0 100 -50 0 0 100 50 F
+X A A -250 0 150 R 40 40 1 1 P
+X K K 250 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pypilot_components_ncp5106b
+#
+DEF pypilot_components_ncp5106b U 0 40 Y Y 1 F N
+F0 "U" 250 -50 60 H V C CNN
+F1 "pypilot_components_ncp5106b" -150 -50 60 H V C CNN
+F2 "freetronics_footprints:SO08_4mm" 200 -550 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+P 5 0 1 0 -300 -500 -300 -100 300 -100 300 -500 -300 -500 N
+X VCC 1 -400 -150 100 R 50 50 1 1 W
+X IN_HI 2 -400 -250 100 R 50 50 1 1 I
+X IN_LO 3 -400 -350 100 R 50 50 1 1 I
+X GND 4 -400 -450 100 R 50 50 1 1 I
+X DRV_LO 5 400 -450 100 L 50 50 1 1 O
+X BRIDGE 6 400 -350 100 L 50 50 1 1 I
+X DRV_HI 7 400 -250 100 L 50 50 1 1 O
+X VBOOT 8 400 -150 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# uart_UART_Device
+#
+DEF uart_UART_Device J 0 0 N Y 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "uart_UART_Device" 100 0 50 V V C CNN
+F2 "uart:uart" 0 -300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -195 10 -205 0 1 0 N
+S -50 -95 10 -105 0 1 0 N
+S -50 5 10 -5 0 1 0 N
+S -50 105 10 95 0 1 0 N
+S -50 150 50 -250 0 1 0 N
+X VCC 1 -200 100 150 R 50 50 1 1 P
+X RX 2 -200 0 150 R 50 50 1 1 P
+X TX 3 -200 -100 150 R 50 50 1 1 P
+X GND 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# uart_cpc5001
+#
+DEF uart_cpc5001 U 0 40 Y Y 1 F N
+F0 "U" 250 250 60 H V C CNN
+F1 "uart_cpc5001" -100 250 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 300 -200 -300 200 0 1 0 N
+X IN1 1 -450 150 150 R 50 50 1 1 I
+X GNDA 2 -450 50 150 R 50 50 1 1 W
+X OUT2 3 -450 -50 150 R 50 50 1 1 O
+X VDDA 4 -450 -150 150 R 50 50 1 1 W
+X IN2 5 450 -150 150 L 50 50 1 1 I
+X GNDB 6 450 -50 150 L 50 50 1 1 W
+X OUT1 7 450 50 150 L 50 50 1 1 O
+X VDDB 8 450 150 150 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

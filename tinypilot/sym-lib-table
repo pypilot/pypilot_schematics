@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name tinypilot-rescue)(type Legacy)(uri ${KIPRJMOD}/tinypilot-rescue.lib)(options "")(descr ""))
+  (lib (name uart)(type Legacy)(uri /home/sean/pypilot_schematics/libraries/uart.lib)(options "")(descr ""))
+  (lib (name mini_pi_hat)(type Legacy)(uri /home/sean/pypilot_schematics/imu_hat_rpi/mini_pi_hat.lib)(options "")(descr ""))
+  (lib (name freetronics_schematic)(type Legacy)(uri /home/sean/pypilot_schematics/libraries/freetronics_kicad_library/freetronics_schematic.lib)(options "")(descr ""))
+  (lib (name imu_hat)(type Legacy)(uri ${KIPRJMOD}/imu_hat.lib)(options "")(descr ""))
+)

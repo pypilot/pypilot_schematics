@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name hydraulic_footprints)(type KiCad)(uri "$(KIPRJMOD)/hydraulic_footprints.pretty")(options "")(descr ""))
+  (lib (name freetronics_footprints)(type KiCad)(uri /home/sean/pypilot_schematics/libraries/freetronics_kicad_library/freetronics_footprints.pretty)(options "")(descr ""))
+  (lib (name Resistor_THT)(type KiCad)(uri /home/sean/kicad-footprints/Resistor_THT.pretty)(options "")(descr ""))
+)
