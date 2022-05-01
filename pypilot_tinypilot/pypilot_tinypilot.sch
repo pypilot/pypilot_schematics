@@ -1,0 +1,1690 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L uart:UART_Host J4
+U 1 1 5B6DE5C3
+P 7250 1350
+F 0 "J4" H 7200 1550 50  0000 L CNN
+F 1 "motor controller" V 7350 1100 50  0000 L CNN
+F 2 "pypilot_tinypilot_footprints:uart_host" H 7250 1050 50  0001 C CNN
+F 3 "" H 7250 1350 50  0001 C CNN
+	1    7250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1100 1950 1100
+Text GLabel 3800 1300 0    50   Output ~ 0
+SCL
+Text GLabel 3800 1200 0    50   Input ~ 0
+SDA
+Text GLabel 3800 1600 0    50   Input ~ 0
+AUTO
+Text GLabel 3800 1800 0    50   Input ~ 0
++1
+Text GLabel 3800 1700 0    50   Input ~ 0
+-1
+Text GLabel 5300 1800 2    50   Input ~ 0
+MENU
+Text GLabel 5300 1600 2    50   Input ~ 0
+SELECT
+$Comp
+L power:GND #PWR0101
+U 1 1 5D1DBD91
+P 3750 2300
+F 0 "#PWR0101" H 3750 2050 50  0001 C CNN
+F 1 "GND" V 3750 2100 50  0001 C CNN
+F 2 "" H 3750 2300 50  0001 C CNN
+F 3 "" H 3750 2300 50  0001 C CNN
+	1    3750 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2300 3800 2300
+$Comp
+L power:GND #PWR0102
+U 1 1 5D1DBDBD
+P 7000 3450
+F 0 "#PWR0102" H 7000 3200 50  0001 C CNN
+F 1 "GND" H 7005 3277 50  0001 C CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "" H 7000 3450 50  0001 C CNN
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 2850 0    50   Input ~ 0
+AUTO
+Text GLabel 7000 2750 0    50   Input ~ 0
+MENU
+Text GLabel 7000 2650 0    50   Input ~ 0
++1
+Text GLabel 7000 2550 0    50   Input ~ 0
+-1
+Text GLabel 7000 2450 0    50   Input ~ 0
+SELECT
+Text GLabel 3800 2000 0    50   Output ~ 0
+MOSI
+Text GLabel 3800 2200 0    50   Output ~ 0
+SCK
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5D1E9FBB
+P 1950 1100
+F 0 "#PWR0103" H 1950 950 50  0001 C CNN
+F 1 "+3.3V" H 1965 1273 50  0000 C CNN
+F 2 "" H 1950 1100 50  0001 C CNN
+F 3 "" H 1950 1100 50  0001 C CNN
+	1    1950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5D1EA0DE
+P 3800 1100
+F 0 "#PWR0106" H 3800 950 50  0001 C CNN
+F 1 "+3.3V" H 3650 1150 50  0000 C CNN
+F 2 "" H 3800 1100 50  0001 C CNN
+F 3 "" H 3800 1100 50  0001 C CNN
+	1    3800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5D1EA125
+P 3800 1900
+F 0 "#PWR0107" H 3800 1750 50  0001 C CNN
+F 1 "+3.3V" V 3815 2028 50  0000 L CNN
+F 2 "" H 3800 1900 50  0001 C CNN
+F 3 "" H 3800 1900 50  0001 C CNN
+	1    3800 1900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5300 1900 2    50   Output ~ 0
+LCD_RESET
+Text GLabel 5300 2100 2    50   Output ~ 0
+LCD_DC
+Text GLabel 5300 2200 2    50   Output ~ 0
+LCD_CE
+$Comp
+L power:GND #PWR0110
+U 1 1 5D1F14A7
+P 3800 3000
+F 0 "#PWR0110" H 3800 2750 50  0001 C CNN
+F 1 "GND" V 3800 2800 50  0001 C CNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 2500 0    50   Input ~ 0
++10
+Text GLabel 3800 2600 0    50   Input ~ 0
+-10
+$Comp
+L Memory_EEPROM:CAT24C256 U4
+U 1 1 5D1F320E
+P 1300 2150
+F 0 "U4" H 1000 2550 50  0000 C CNN
+F 1 "CAT24C32" H 1000 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1300 2150 50  0001 C CNN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF" H 1300 2150 50  0001 C CNN
+F 4 "C81193" H 1300 2150 50  0001 C CNN "LCSC"
+	1    1300 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 2400 2    50   Output ~ 0
+ID_SC
+Text GLabel 3800 2400 0    50   BiDi ~ 0
+ID_SD
+Text GLabel 2700 2150 2    50   Input ~ 0
+ID_SC
+$Comp
+L power:GND #PWR0112
+U 1 1 5D1F4D04
+P 1300 2450
+F 0 "#PWR0112" H 1300 2200 50  0001 C CNN
+F 1 "GND" H 1300 2250 50  0000 C CNN
+F 2 "" H 1300 2450 50  0001 C CNN
+F 3 "" H 1300 2450 50  0001 C CNN
+	1    1300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2450 900  2450
+Wire Wire Line
+	900  2450 900  2250
+Connection ~ 1300 2450
+Wire Wire Line
+	900  2050 900  2150
+Connection ~ 900  2250
+Connection ~ 900  2150
+Wire Wire Line
+	900  2150 900  2250
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5D1F5949
+P 2050 1700
+F 0 "#PWR0113" H 2050 1550 50  0001 C CNN
+F 1 "+3.3V" H 2200 1750 50  0000 C CNN
+F 2 "" H 2050 1700 50  0001 C CNN
+F 3 "" H 2050 1700 50  0001 C CNN
+	1    2050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D1F6288
+P 1750 1850
+F 0 "R6" H 1820 1896 50  0000 L CNN
+F 1 "3.9k" H 1800 1800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1680 1850 50  0001 C CNN
+F 3 "~" H 1750 1850 50  0001 C CNN
+F 4 "C17614" H 1750 1850 50  0001 C CNN "LCSC"
+	1    1750 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 2050 2    50   BiDi ~ 0
+ID_SD
+Wire Wire Line
+	1700 2150 2050 2150
+Wire Wire Line
+	2350 2000 2350 2250
+Wire Wire Line
+	2700 2050 1750 2050
+Wire Wire Line
+	1750 2000 1750 2050
+Connection ~ 1750 2050
+Wire Wire Line
+	1750 2050 1700 2050
+Wire Wire Line
+	2350 1700 2050 1700
+Wire Wire Line
+	1300 1700 1300 1850
+Connection ~ 1750 1700
+Wire Wire Line
+	1750 1700 1300 1700
+Connection ~ 2050 1700
+$Comp
+L power:GND #PWR0114
+U 1 1 5D1FF114
+P 700 2000
+F 0 "#PWR0114" H 700 1750 50  0001 C CNN
+F 1 "GND" H 700 1800 50  0000 C CNN
+F 2 "" H 700 2000 50  0001 C CNN
+F 3 "" H 700 2000 50  0001 C CNN
+	1    700  2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D1FF174
+P 700 1850
+F 0 "C1" H 600 1950 50  0000 L CNN
+F 1 ".1uF" H 550 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 738 1700 50  0001 C CNN
+F 3 "~" H 700 1850 50  0001 C CNN
+F 4 "C49678" H 700 1850 50  0001 C CNN "LCSC"
+	1    700  1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 2250
+Wire Wire Line
+	1300 1700 700  1700
+Connection ~ 1300 1700
+Text GLabel 7000 2350 0    50   Input ~ 0
++10
+Text GLabel 7000 2250 0    50   Input ~ 0
+-10
+$Comp
+L power:GND #PWR0116
+U 1 1 5D206598
+P 6500 4000
+F 0 "#PWR0116" H 6500 3750 50  0001 C CNN
+F 1 "GND" V 6500 3800 50  0001 C CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5D2065C7
+P 6500 4100
+F 0 "#PWR0117" H 6500 3950 50  0001 C CNN
+F 1 "+3.3V" V 6515 4228 50  0000 L CNN
+F 2 "" H 6500 4100 50  0001 C CNN
+F 3 "" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	0    1    1    0   
+$EndComp
+Text GLabel 6500 4200 2    50   Input ~ 0
+SCK
+Text GLabel 6500 4300 2    50   Input ~ 0
+MOSI
+Text GLabel 6500 4500 2    50   Input ~ 0
+LCD_RESET
+Text GLabel 6500 4600 2    50   Input ~ 0
+LCD_CE
+Text GLabel 6500 4400 2    50   Input ~ 0
+LCD_DC
+Text GLabel 3800 2100 0    50   Input ~ 0
+MISO
+Text GLabel 5300 2300 2    50   Output ~ 0
+AR_SS
+$Comp
+L power:+3.3V #PWR0121
+U 1 1 5D291014
+P 2400 3500
+F 0 "#PWR0121" H 2400 3350 50  0001 C CNN
+F 1 "+3.3V" H 2250 3600 50  0000 C CNN
+F 2 "" H 2400 3500 50  0001 C CNN
+F 3 "" H 2400 3500 50  0001 C CNN
+	1    2400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5D293E29
+P 1100 4950
+F 0 "R11" H 1250 5000 50  0000 C CNN
+F 1 "10k" V 1100 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1030 4950 50  0001 C CNN
+F 3 "~" H 1100 4950 50  0001 C CNN
+F 4 "" V 1100 4950 50  0001 C CNN "Field4"
+F 5 " C17414" V 1100 4950 50  0001 C CNN "LCSC"
+	1    1100 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 5D294D7A
+P 1100 4500
+F 0 "#PWR0122" H 1100 4350 50  0001 C CNN
+F 1 "+3.3V" H 1250 4550 50  0000 C CNN
+F 2 "" H 1100 4500 50  0001 C CNN
+F 3 "" H 1100 4500 50  0001 C CNN
+	1    1100 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5D294DB5
+P 1100 5100
+F 0 "#PWR0123" H 1100 4850 50  0001 C CNN
+F 1 "GND" H 1100 4950 50  0001 C CNN
+F 2 "" H 1100 5100 50  0001 C CNN
+F 3 "" H 1100 5100 50  0001 C CNN
+	1    1100 5100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2450 4650 2    50   Input ~ 0
+SCK
+Text GLabel 2450 4350 2    50   Input ~ 0
+AR_SS
+$Comp
+L pypilot_tinypilot-rescue:BUZZER-freetronics_schematic-pypilot_tinypilot-rescue U6
+U 1 1 5D5EE0FE
+P 2750 6400
+F 0 "U6" V 2700 6600 70  0000 L CNN
+F 1 "BUZZER" V 2500 6400 70  0000 L CNN
+F 2 "Buzzer_Beeper:PUIAudio_SMT_0825_S_4_R" H 2700 6350 60  0001 C CNN
+F 3 "" H 2700 6350 60  0000 C CNN
+F 4 "C94599" V 2750 6400 50  0001 C CNN "LCSC"
+	1    2750 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0125
+U 1 1 5D612D07
+P 5300 1100
+F 0 "#PWR0125" H 5300 950 50  0001 C CNN
+F 1 "+5V" H 5315 1273 50  0000 C CNN
+F 2 "" H 5300 1100 50  0001 C CNN
+F 3 "" H 5300 1100 50  0001 C CNN
+	1    5300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5D612DA9
+P 5300 1300
+F 0 "#PWR0126" H 5300 1050 50  0001 C CNN
+F 1 "GND" V 5250 1350 50  0001 C CNN
+F 2 "" H 5300 1300 50  0001 C CNN
+F 3 "" H 5300 1300 50  0001 C CNN
+	1    5300 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 1200 5300 1100
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 5D61FC72
+P 4750 3800
+F 0 "J9" H 4669 3375 50  0000 C CNN
+F 1 "RF1" H 4669 3466 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4750 3800 50  0001 C CNN
+F 3 "~" H 4750 3800 50  0001 C CNN
+	1    4750 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5D61FCF1
+P 5050 3600
+F 0 "J8" H 5200 3550 50  0000 C CNN
+F 1 "RF2" H 5200 3400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5050 3600 50  0001 C CNN
+F 3 "~" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5D622287
+P 3600 3900
+F 0 "#PWR0118" H 3600 3650 50  0001 C CNN
+F 1 "GND" H 3605 3727 50  0001 C CNN
+F 2 "" H 3600 3900 50  0001 C CNN
+F 3 "" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3800 0    50   Input ~ 0
+DATA
+$Comp
+L power:+3.3V #PWR0119
+U 1 1 5D62241C
+P 3600 3600
+F 0 "#PWR0119" H 3600 3450 50  0001 C CNN
+F 1 "+3.3V" H 3450 3650 50  0000 C CNN
+F 2 "" H 3600 3600 50  0001 C CNN
+F 3 "" H 3600 3600 50  0001 C CNN
+	1    3600 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 5650 2    50   Input ~ 0
+AR_RST
+Text GLabel 5300 2800 2    50   Input ~ 0
+AR_RST
+$Comp
+L Device:R_PHOTO R10
+U 1 1 5D29122A
+P 1100 4650
+F 0 "R10" V 1100 4650 50  0000 C CNN
+F 1 "10k photo" V 1200 4600 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 1150 4400 50  0001 L CNN
+F 3 "~" H 1100 4600 50  0001 C CNN
+F 4 "C10082" V 1100 4650 50  0001 C CNN "LCSC"
+	1    1100 4650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2550 6050 2    50   BiDi ~ 0
+DATA
+Wire Wire Line
+	1700 2250 2350 2250
+Wire Wire Line
+	2050 2000 2050 2150
+Connection ~ 2050 2150
+Wire Wire Line
+	2050 2150 2700 2150
+$Comp
+L power:GND #PWR0127
+U 1 1 5E0DBF3D
+P 5300 2500
+F 0 "#PWR0127" H 5300 2250 50  0001 C CNN
+F 1 "GND" V 5300 2300 50  0001 C CNN
+F 2 "" H 5300 2500 50  0001 C CNN
+F 3 "" H 5300 2500 50  0001 C CNN
+	1    5300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5E0DC0A9
+P 5300 2700
+F 0 "#PWR0128" H 5300 2450 50  0001 C CNN
+F 1 "GND" V 5300 2500 50  0001 C CNN
+F 2 "" H 5300 2700 50  0001 C CNN
+F 3 "" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5E0DC15C
+P 5300 2000
+F 0 "#PWR0129" H 5300 1750 50  0001 C CNN
+F 1 "GND" V 5300 1800 50  0001 C CNN
+F 2 "" H 5300 2000 50  0001 C CNN
+F 3 "" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x09 J1
+U 1 1 5E0E95FE
+P 7200 2550
+F 0 "J1" H 6800 2050 50  0000 C CNN
+F 1 "keypad" H 7100 2050 50  0000 C CNN
+F 2 "pypilot_tinypilot_footprints:keypad" H 7200 2550 50  0001 C CNN
+F 3 "~" H 7200 2550 50  0001 C CNN
+	1    7200 2550
+	1    0    0    1   
+$EndComp
+Text GLabel 7000 2150 0    50   Input ~ 0
+TACK
+Text GLabel 3800 2900 0    50   Input ~ 0
+TACK
+Text GLabel 2450 6150 2    50   Input ~ 0
+IR
+Text GLabel 1900 1300 2    50   Output ~ 0
+IR
+Text GLabel 3800 1400 0    50   Input ~ 0
+IR
+Wire Wire Line
+	1800 1300 1900 1300
+$Comp
+L power:GND #PWR0131
+U 1 1 5E1A2D31
+P 3800 1500
+F 0 "#PWR0131" H 3800 1250 50  0001 C CNN
+F 1 "GND" V 3800 1300 50  0001 C CNN
+F 2 "" H 3800 1500 50  0001 C CNN
+F 3 "" H 3800 1500 50  0001 C CNN
+	1    3800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5E1A2F71
+P 1850 1500
+F 0 "#PWR0132" H 1850 1250 50  0001 C CNN
+F 1 "GND" H 1950 1500 50  0001 C CNN
+F 2 "" H 1850 1500 50  0001 C CNN
+F 3 "" H 1850 1500 50  0001 C CNN
+	1    1850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1500 1800 1500
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R4
+U 1 1 5E1A5A3E
+P 7000 3200
+F 0 "R4" H 7050 3150 50  0000 L CNN
+F 1 "2.4k" V 7000 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7071 3109 60  0001 L CNN
+F 3 "" H 7000 3200 60  0000 C CNN
+F 4 "C17526" H 7000 3200 50  0001 C CNN "LCSC"
+	1    7000 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5E1AF87D
+P 1850 6850
+F 0 "#PWR0124" H 1850 6600 50  0001 C CNN
+F 1 "GND" H 1850 6700 50  0001 C CNN
+F 2 "" H 1850 6850 50  0001 C CNN
+F 3 "" H 1850 6850 50  0001 C CNN
+	1    1850 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6450 2600 6450
+Wire Wire Line
+	2600 6350 2450 6350
+$Comp
+L Interface_Optical:TSDP341xx U1
+U 1 1 5B6DE87D
+P 1400 1300
+F 0 "U1" H 1387 1725 50  0000 C CNN
+F 1 "TSDP341xx" H 1387 1634 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1350 925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82667/tsdp341.pdf" H 2050 1600 50  0001 C CNN
+F 4 "C264257" H 1400 1300 50  0001 C CNN "LCSC"
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5EA2ABF9
+P 2050 1850
+F 0 "R7" H 2120 1896 50  0000 L CNN
+F 1 "3.9k" H 2100 1800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1980 1850 50  0001 C CNN
+F 3 "~" H 2050 1850 50  0001 C CNN
+F 4 "C17614" H 2050 1850 50  0001 C CNN "LCSC"
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5EA2C35A
+P 2350 1850
+F 0 "R5" H 2420 1896 50  0000 L CNN
+F 1 "1k" H 2400 1800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2280 1850 50  0001 C CNN
+F 3 "~" H 2350 1850 50  0001 C CNN
+F 4 "C17513" H 2350 1850 50  0001 C CNN "LCSC"
+	1    2350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R2
+U 1 1 5EA33E2D
+P 5550 1400
+F 0 "R2" V 5500 1150 50  0000 L CNN
+F 1 "2.4k" V 5550 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5621 1309 60  0001 L CNN
+F 3 "" H 5550 1400 60  0000 C CNN
+F 4 "C17526" H 5550 1400 50  0001 C CNN "LCSC"
+	1    5550 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R3
+U 1 1 5EA36BD6
+P 5550 1500
+F 0 "R3" V 5500 1250 50  0000 L CNN
+F 1 "2.4k" V 5550 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5621 1409 60  0001 L CNN
+F 3 "" H 5550 1500 60  0000 C CNN
+F 4 "C17526" H 5550 1500 50  0001 C CNN "LCSC"
+	1    5550 1500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1750 1700 2050 1700
+$Comp
+L pypilot_tinypilot-rescue:ATmega328P-AU-MCU_Microchip_ATmega-pypilot_tinypilot-rescue U5
+U 1 1 5EA41B67
+P 1850 5350
+F 0 "U5" H 1750 5300 50  0000 C CNN
+F 1 "ATmega328P-AU" H 1800 5600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 1850 5350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1850 5350 50  0001 C CNN
+F 4 "C14877" H 1850 5350 50  0001 C CNN "LCSC"
+	1    1850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EA46FF5
+P 1100 4150
+F 0 "C2" V 1050 4200 50  0000 L CNN
+F 1 ".1uF" V 950 4100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 4000 50  0001 C CNN
+F 3 "~" H 1100 4150 50  0001 C CNN
+F 4 "C49678" H 1100 4150 50  0001 C CNN "LCSC"
+	1    1100 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EA49FDE
+P 2150 3650
+F 0 "C3" H 2050 3750 50  0000 L CNN
+F 1 ".1uF" H 1950 3550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2188 3500 50  0001 C CNN
+F 3 "~" H 2150 3650 50  0001 C CNN
+F 4 "C49678" H 2150 3650 50  0001 C CNN "LCSC"
+	1    2150 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5EA4A582
+P 2400 3800
+F 0 "#PWR0120" H 2400 3550 50  0001 C CNN
+F 1 "GND" H 2300 3750 50  0001 C CNN
+F 2 "" H 2400 3800 50  0001 C CNN
+F 3 "" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3850 1950 3850
+$Comp
+L power:GND #PWR0130
+U 1 1 5EA50921
+P 950 4150
+F 0 "#PWR0130" H 950 3900 50  0001 C CNN
+F 1 "GND" H 850 4100 50  0001 C CNN
+F 2 "" H 950 4150 50  0001 C CNN
+F 3 "" H 950 4150 50  0001 C CNN
+	1    950  4150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2550 6050 2450 6050
+Wire Wire Line
+	2450 5650 2500 5650
+Wire Wire Line
+	5800 1400 5900 1250
+Wire Wire Line
+	5800 1500 5900 1650
+Connection ~ 5300 1100
+$Comp
+L pypilot_tinypilot-rescue:RASPBERRY_PI-rpi-pypilot_tinypilot-rescue J6
+U 1 1 5D1F11D0
+P 4550 1700
+F 0 "J6" H 4550 2587 60  0000 C CNN
+F 1 "RASPBERRY_PI" H 4550 2481 60  0000 C CNN
+F 2 "freetronics_footprints:RASPBERRY_PI_HAT" H 4300 1350 60  0001 C CNN
+F 3 "" H 4300 1350 60  0000 C CNN
+	1    4550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1250 7050 1350
+Wire Wire Line
+	6900 1650 7050 1450
+$Comp
+L power:GND #PWR0135
+U 1 1 5EB37212
+P 7050 1550
+F 0 "#PWR0135" H 7050 1300 50  0001 C CNN
+F 1 "GND" H 6950 1500 50  0001 C CNN
+F 2 "" H 7050 1550 50  0001 C CNN
+F 3 "" H 7050 1550 50  0001 C CNN
+	1    7050 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5950 2850 5950
+$Comp
+L Device:C C5
+U 1 1 5EC1F165
+P 3050 4950
+F 0 "C5" V 2950 5050 50  0000 L CNN
+F 1 "18pF" V 3100 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 4800 50  0001 C CNN
+F 3 "~" H 3050 4950 50  0001 C CNN
+F 4 "C1792" H 3050 4950 50  0001 C CNN "LCSC"
+	1    3050 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5EC1F90F
+P 2900 4800
+F 0 "Y1" V 2854 4931 50  0000 L CNN
+F 1 "8mhz" V 2900 4700 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 2900 4800 50  0001 C CNN
+F 3 "~" H 2900 4800 50  0001 C CNN
+F 4 "C115962" V 2900 4800 50  0001 C CNN "LCSC"
+	1    2900 4800
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 4800
+$Comp
+L power:GND #PWR0138
+U 1 1 5EC3BC7E
+P 3200 5000
+F 0 "#PWR0138" H 3200 4750 50  0001 C CNN
+F 1 "GND" H 3200 4850 50  0001 C CNN
+F 2 "" H 3200 5000 50  0001 C CNN
+F 3 "" H 3200 5000 50  0001 C CNN
+	1    3200 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EC3D003
+P 3050 4650
+F 0 "C4" V 2950 4750 50  0000 L CNN
+F 1 "18pF" V 2900 4600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 4500 50  0001 C CNN
+F 3 "~" H 3050 4650 50  0001 C CNN
+F 4 "C1792" H 3050 4650 50  0001 C CNN "LCSC"
+	1    3050 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4750 2750 4750
+Wire Wire Line
+	2750 4750 2750 4650
+Wire Wire Line
+	2750 4650 2900 4650
+Wire Wire Line
+	3200 4650 3200 4950
+Connection ~ 2900 4650
+Connection ~ 3200 4950
+Wire Wire Line
+	3200 4950 3200 5000
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5EC71D14
+P 6100 2550
+F 0 "J2" V 6180 2542 50  0000 L CNN
+F 1 "Conn_01x08" H 6180 2451 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6100 2550 50  0001 C CNN
+F 3 "~" H 6100 2550 50  0001 C CNN
+	1    6100 2550
+	-1   0    0    1   
+$EndComp
+Text GLabel 2450 5550 2    50   Input ~ 0
+EXT6
+Text GLabel 2450 5050 2    50   Input ~ 0
+EXT1
+Text GLabel 2450 5150 2    50   Input ~ 0
+EXT2
+Text GLabel 2450 5250 2    50   Input ~ 0
+EXT3
+Text GLabel 2450 5350 2    50   Input ~ 0
+EXT4
+Text GLabel 2450 5450 2    50   Input ~ 0
+EXT5
+Text GLabel 6300 2750 2    50   Input ~ 0
+EXT1
+$Comp
+L power:GND #PWR0139
+U 1 1 5EC82582
+P 6300 3150
+F 0 "#PWR0139" H 6300 2900 50  0001 C CNN
+F 1 "GND" H 6350 3000 50  0001 C CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 2650 2    50   Input ~ 0
+EXT2
+Text GLabel 6300 2550 2    50   Input ~ 0
+EXT3
+Text GLabel 6300 2450 2    50   Input ~ 0
+EXT4
+Text GLabel 6300 2350 2    50   Input ~ 0
+EXT5
+Text GLabel 6300 2250 2    50   Input ~ 0
+EXT6
+Text GLabel 2450 4250 2    50   Output ~ 0
+BL
+Text GLabel 6500 3900 2    50   Output ~ 0
+BL
+Text GLabel 2450 4450 2    50   Input ~ 0
+MOSI
+Text GLabel 2450 4550 2    50   Output ~ 0
+MISO
+Wire Wire Line
+	1250 4450 1250 4800
+Wire Wire Line
+	1250 4800 1100 4800
+Wire Wire Line
+	3800 2700 2700 2700
+Wire Wire Line
+	2700 2700 2700 2250
+Wire Wire Line
+	2700 2250 2350 2250
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R13
+U 1 1 5EE1C173
+P 2700 4150
+F 0 "R13" V 2600 4050 50  0000 L CNN
+F 1 "1.2k" V 2700 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2771 4059 60  0001 L CNN
+F 3 "" H 2700 4150 60  0000 C CNN
+F 4 "C17379" H 2700 4150 50  0001 C CNN "LCSC"
+	1    2700 4150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EE1CE83
+P 3100 4150
+F 0 "D1" H 3093 3895 50  0000 C CNN
+F 1 "LED" H 3093 3986 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3100 4150 50  0001 C CNN
+F 3 "~" H 3100 4150 50  0001 C CNN
+F 4 "C2293" H 3100 4150 50  0001 C CNN "LCSC"
+	1    3100 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5EE23D46
+P 3250 4150
+F 0 "#PWR0136" H 3250 3900 50  0001 C CNN
+F 1 "GND" H 3150 4100 50  0001 C CNN
+F 2 "" H 3250 4150 50  0001 C CNN
+F 3 "" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5EC7F816
+P 6300 3000
+F 0 "R12" H 6370 3046 50  0000 L CNN
+F 1 "1k" V 6300 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+F 4 "C17513" H 6300 3000 50  0001 C CNN "LCSC"
+	1    6300 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R16
+U 1 1 5EFA5625
+P 3650 5600
+F 0 "R16" V 3550 5650 50  0000 L CNN
+F 1 "2k" V 3650 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3721 5509 60  0001 L CNN
+F 3 "" H 3650 5600 60  0000 C CNN
+F 4 "C17604" H 3650 5600 50  0001 C CNN "LCSC"
+	1    3650 5600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5EFA7D3E
+P 3350 5300
+F 0 "D2" V 3450 5250 50  0000 C CNN
+F 1 "TX" V 3350 5400 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3350 5300 50  0001 C CNN
+F 3 "~" H 3350 5300 50  0001 C CNN
+F 4 "C2297" H 3350 5300 50  0001 C CNN "LCSC"
+	1    3350 5300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5EFA854F
+P 3900 5350
+F 0 "D3" V 4000 5300 50  0000 C CNN
+F 1 "RX" V 4000 5450 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3900 5350 50  0001 C CNN
+F 3 "~" H 3900 5350 50  0001 C CNN
+F 4 "C2296" H 3900 5350 50  0001 C CNN "LCSC"
+	1    3900 5350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 5950 2850 5550
+Wire Wire Line
+	3400 5600 3400 5850
+Wire Wire Line
+	3350 5550 3350 5450
+Wire Wire Line
+	3900 5600 3900 5500
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5F0023C8
+P 3350 5150
+F 0 "#PWR0115" H 3350 5000 50  0001 C CNN
+F 1 "+3.3V" H 3200 5250 50  0000 C CNN
+F 2 "" H 3350 5150 50  0001 C CNN
+F 3 "" H 3350 5150 50  0001 C CNN
+	1    3350 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5F002A4E
+P 3900 5200
+F 0 "#PWR0137" H 3900 5050 50  0001 C CNN
+F 1 "+3.3V" H 3950 5350 50  0000 C CNN
+F 2 "" H 3900 5200 50  0001 C CNN
+F 3 "" H 3900 5200 50  0001 C CNN
+	1    3900 5200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2450 6550 2    50   Input ~ 0
+EXT7
+$Comp
+L Device:R R1
+U 1 1 5F010B73
+P 750 4200
+F 0 "R1" V 750 4200 50  0000 C CNN
+F 1 "10k" V 650 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 680 4200 50  0001 C CNN
+F 3 "~" H 750 4200 50  0001 C CNN
+F 4 "" V 750 4200 50  0001 C CNN "Field4"
+F 5 " C17414" V 750 4200 50  0001 C CNN "LCSC"
+	1    750  4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 2150 2    50   Input ~ 0
+EXT7
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R9
+U 1 1 5EFA1A52
+P 3100 5550
+F 0 "R9" V 3000 5600 50  0000 L CNN
+F 1 "2k" V 3100 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3171 5459 60  0001 L CNN
+F 3 "" H 3100 5550 60  0000 C CNN
+F 4 "C17604" H 3100 5550 50  0001 C CNN "LCSC"
+	1    3100 5550
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5F097750
+P 750 4500
+F 0 "R8" V 750 4500 50  0000 C CNN
+F 1 "10k" V 650 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 680 4500 50  0001 C CNN
+F 3 "~" H 750 4500 50  0001 C CNN
+F 4 "" V 750 4500 50  0001 C CNN "Field4"
+F 5 " C17414" V 750 4500 50  0001 C CNN "LCSC"
+	1    750  4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5F0AFA4E
+P 750 4050
+F 0 "#PWR0141" H 750 3900 50  0001 C CNN
+F 1 "+5V" H 750 4200 50  0000 C CNN
+F 2 "" H 750 4050 50  0001 C CNN
+F 3 "" H 750 4050 50  0001 C CNN
+	1    750  4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 750  4350
+Wire Wire Line
+	2850 5950 3100 5950
+Connection ~ 2850 5950
+Wire Wire Line
+	4000 5950 4000 6100
+Wire Wire Line
+	7050 1050 7050 1250
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5D1EA097
+P 5900 1450
+F 0 "#PWR0105" H 5900 1300 50  0001 C CNN
+F 1 "+3.3V" H 5950 1550 50  0000 C CNN
+F 2 "" H 5900 1450 50  0001 C CNN
+F 3 "" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5950 5200 5700
+Wire Wire Line
+	5200 5700 5000 5700
+Wire Wire Line
+	5450 5950 5200 5950
+Wire Wire Line
+	5000 6100 5300 6100
+Wire Wire Line
+	5300 6100 5300 5850
+Wire Wire Line
+	5300 5850 5450 5850
+$Comp
+L power:GND #PWR0144
+U 1 1 5F24CF7A
+P 5450 6050
+F 0 "#PWR0144" H 5450 5800 50  0001 C CNN
+F 1 "GND" H 5350 6100 50  0001 C CNN
+F 2 "" H 5450 6050 50  0001 C CNN
+F 3 "" H 5450 6050 50  0001 C CNN
+	1    5450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R14
+U 1 1 5F2656DA
+P 3150 5850
+F 0 "R14" V 3050 5800 50  0000 L CNN
+F 1 "2.4k" V 3150 5750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3221 5759 60  0001 L CNN
+F 3 "" H 3150 5850 60  0000 C CNN
+F 4 "C17526" H 3150 5850 50  0001 C CNN "LCSC"
+	1    3150 5850
+	0    -1   1    0   
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R15
+U 1 1 5F26A7C7
+P 3350 5950
+F 0 "R15" V 3450 5900 50  0000 L CNN
+F 1 "2.4k" V 3350 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3421 5859 60  0001 L CNN
+F 3 "" H 3350 5950 60  0000 C CNN
+F 4 "C17526" H 3350 5950 50  0001 C CNN "LCSC"
+	1    3350 5950
+	0    -1   1    0   
+$EndComp
+Connection ~ 3400 5850
+Wire Wire Line
+	2900 5850 2450 5850
+Wire Wire Line
+	3600 5950 4000 5950
+$Comp
+L power:GND #PWR0145
+U 1 1 5EFD3A23
+P 750 4650
+F 0 "#PWR0145" H 750 4400 50  0001 C CNN
+F 1 "GND" H 750 4500 50  0001 C CNN
+F 2 "" H 750 4650 50  0001 C CNN
+F 3 "" H 750 4650 50  0001 C CNN
+	1    750  4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5EB044FD
+P 5300 1700
+F 0 "#PWR0134" H 5300 1450 50  0001 C CNN
+F 1 "GND" V 5250 1750 50  0001 C CNN
+F 2 "" H 5300 1700 50  0001 C CNN
+F 3 "" H 5300 1700 50  0001 C CNN
+	1    5300 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  4350 1250 4350
+$Comp
+L Device:C C6
+U 1 1 5F14E78C
+P 2400 3650
+F 0 "C6" H 2300 3750 50  0000 L CNN
+F 1 "1uF" H 2250 3550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2438 3500 50  0001 C CNN
+F 3 "~" H 2400 3650 50  0001 C CNN
+F 4 "C28323" H 2400 3650 50  0001 C CNN "LCSC"
+	1    2400 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5F15E3A9
+P 2150 3800
+F 0 "#PWR0146" H 2150 3550 50  0001 C CNN
+F 1 "GND" H 2050 3750 50  0001 C CNN
+F 2 "" H 2150 3800 50  0001 C CNN
+F 3 "" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3850 1950 3500
+Wire Wire Line
+	1950 3500 2150 3500
+Connection ~ 1950 3850
+Connection ~ 2150 3500
+Wire Wire Line
+	2150 3500 2400 3500
+Connection ~ 2400 3500
+Wire Wire Line
+	2450 4850 2750 4850
+Wire Wire Line
+	2750 4850 2750 4950
+Wire Wire Line
+	2750 4950 2900 4950
+Connection ~ 2900 4950
+$Comp
+L power:+5V #PWR0147
+U 1 1 5F0F40FE
+P 5450 5650
+F 0 "#PWR0147" H 5450 5500 50  0001 C CNN
+F 1 "+5V" H 5450 5800 50  0000 C CNN
+F 2 "" H 5450 5650 50  0001 C CNN
+F 3 "" H 5450 5650 50  0001 C CNN
+	1    5450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:USBLC6-2SC6-2-usblc6-2sc6-2-pypilot_tinypilot-rescue U3
+U 1 1 5F2109C9
+P 2500 6150
+F 0 "U3" H 500 6867 50  0000 C CNN
+F 1 "USBLC6-2SC6-2" H 500 6776 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" V 900 7150 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" V 850 6200 50  0001 C CNN
+F 4 "C7519" H 2500 6150 50  0001 C CNN "LCSC"
+	1    2500 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5F2457FC
+P 5000 5900
+F 0 "#PWR0142" H 5000 5650 50  0001 C CNN
+F 1 "GND" H 4900 5950 50  0001 C CNN
+F 2 "" H 5000 5900 50  0001 C CNN
+F 3 "" H 5000 5900 50  0001 C CNN
+	1    5000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5850 3800 5850
+Wire Wire Line
+	4000 5700 3800 5700
+Wire Wire Line
+	3800 5700 3800 5850
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 5F248FFA
+P 4000 5900
+F 0 "#PWR0143" H 4000 5750 50  0001 C CNN
+F 1 "+3.3V" H 3850 6000 50  0000 C CNN
+F 2 "" H 4000 5900 50  0001 C CNN
+F 3 "" H 4000 5900 50  0001 C CNN
+	1    4000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5F2E80C3
+P 4550 4750
+F 0 "R17" H 4700 4800 50  0000 C CNN
+F 1 "10k" V 4550 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4480 4750 50  0001 C CNN
+F 3 "~" H 4550 4750 50  0001 C CNN
+F 4 "" V 4550 4750 50  0001 C CNN "Field4"
+F 5 " C17414" V 4550 4750 50  0001 C CNN "LCSC"
+	1    4550 4750
+	-1   0    0    1   
+$EndComp
+Text GLabel 4550 4900 2    50   Input ~ 0
+AR_RST
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 5F2F0800
+P 4550 4600
+F 0 "#PWR0140" H 4550 4450 50  0001 C CNN
+F 1 "+3.3V" H 4565 4773 50  0000 C CNN
+F 2 "" H 4550 4600 50  0001 C CNN
+F 3 "" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5F4483EC
+P 5650 5850
+F 0 "J3" H 5730 5892 50  0000 L CNN
+F 1 "nmea" H 5730 5801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5650 5850 50  0001 C CNN
+F 3 "~" H 5650 5850 50  0001 C CNN
+	1    5650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0148
+U 1 1 5F44D511
+P 5350 5750
+F 0 "#PWR0148" H 5350 5600 50  0001 C CNN
+F 1 "+3.3V" H 5300 5900 50  0000 C CNN
+F 2 "" H 5350 5750 50  0001 C CNN
+F 3 "" H 5350 5750 50  0001 C CNN
+	1    5350 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5750 5350 5750
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5F5E5EA2
+P 3750 3600
+F 0 "FB1" V 3568 3600 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3567 3600 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 3680 3600 50  0001 C CNN
+F 3 "~" H 3750 3600 50  0001 C CNN
+F 4 "C1017" V 3750 3600 50  0001 C CNN "LCSC"
+	1    3750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5F60F259
+P 3900 3750
+F 0 "C7" H 3800 3850 50  0000 L CNN
+F 1 ".1uF" H 3700 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 3600 50  0001 C CNN
+F 3 "~" H 3900 3750 50  0001 C CNN
+F 4 "C49678" H 3900 3750 50  0001 C CNN "LCSC"
+	1    3900 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 3600 3900 3600
+$Comp
+L Device:C C8
+U 1 1 5F647D71
+P 4550 3950
+F 0 "C8" H 4650 3950 50  0000 L CNN
+F 1 "18pF" H 4600 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 3800 50  0001 C CNN
+F 3 "~" H 4550 3950 50  0001 C CNN
+F 4 "C1792" H 4550 3950 50  0001 C CNN "LCSC"
+	1    4550 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5F64C8A1
+P 4400 3800
+F 0 "R18" V 4300 3750 50  0000 L CNN
+F 1 "1k" V 4400 3750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+F 4 "C17513" H 4400 3800 50  0001 C CNN "LCSC"
+	1    4400 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 4550 3800
+Wire Wire Line
+	3900 3900 4300 3900
+Connection ~ 3900 3600
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 5F66449D
+P 3750 3900
+F 0 "FB2" V 3568 3900 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3567 3900 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 3680 3900 50  0001 C CNN
+F 3 "~" H 3750 3900 50  0001 C CNN
+F 4 "C1017" V 3750 3900 50  0001 C CNN "LCSC"
+	1    3750 3900
+	0    1    1    0   
+$EndComp
+Connection ~ 3900 3900
+Wire Wire Line
+	4550 4100 4300 4100
+Wire Wire Line
+	4300 4100 4300 3900
+Connection ~ 4300 3900
+Wire Wire Line
+	4300 3900 4550 3900
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 605604F0
+P 6900 5250
+F 0 "J5" H 6980 5196 50  0000 L CNN
+F 1 "Conn_01x02" H 6980 5151 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6900 5250 50  0001 C CNN
+F 3 "~" H 6900 5250 50  0001 C CNN
+F 4 "C160332" H 6900 5250 50  0001 C CNN "LCSC"
+	1    6900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 60562FE3
+P 6900 5650
+F 0 "J7" H 6980 5596 50  0000 L CNN
+F 1 "Conn_01x02" H 6980 5551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6900 5650 50  0001 C CNN
+F 3 "~" H 6900 5650 50  0001 C CNN
+F 4 "C160332" H 6900 5650 50  0001 C CNN "LCSC"
+	1    6900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:USBLC6-2SC6-2-usblc6-2sc6-2-pypilot_tinypilot-rescue U7
+U 1 1 5EAE8573
+P 4400 1700
+F 0 "U7" H 2400 2417 50  0000 C CNN
+F 1 "USBLC6-2SC6-2" H 2400 2326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" V 2800 2700 50  0001 C CNN
+F 3 "C7519, C558442" V 2750 1750 50  0001 C CNN
+F 4 "C7519" H 4400 1700 50  0001 C CNN "LCSC"
+	1    4400 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 605C3BEF
+P 7050 1050
+F 0 "#PWR0108" H 7050 900 50  0001 C CNN
+F 1 "+3.3V" H 7100 1250 50  0000 C CNN
+F 2 "" H 7050 1050 50  0001 C CNN
+F 3 "" H 7050 1050 50  0001 C CNN
+	1    7050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 605C3FC0
+P 6900 1450
+F 0 "#PWR0109" H 6900 1200 50  0001 C CNN
+F 1 "GND" H 6800 1400 50  0001 C CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 60DC5C65
+P 3400 6350
+F 0 "J10" H 3480 6296 50  0000 L CNN
+F 1 "Conn_01x02" H 3480 6251 50  0001 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3400 6350 50  0001 C CNN
+F 3 "~" H 3400 6350 50  0001 C CNN
+	1    3400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6350 3200 6350
+Connection ~ 2600 6350
+Wire Wire Line
+	3200 6450 2600 6450
+Connection ~ 2600 6450
+$Comp
+L pypilot_tinypilot-rescue:MPU9250-i2c-imu_tinypilot U9
+U 1 1 60CCD6C0
+P 9150 3050
+F 0 "U9" H 9450 3500 60  0000 L CNN
+F 1 "IC20948-i2c" H 9100 3700 60  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9150 3000 60  0001 C CNN
+F 3 "" H 9150 3000 60  0000 C CNN
+	1    9150 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R20
+U 1 1 60CCF56D
+P 10600 2600
+F 0 "R20" H 10650 2550 50  0000 L CNN
+F 1 "4.7k" V 10600 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10671 2509 60  0001 L CNN
+F 3 "" H 10600 2600 60  0000 C CNN
+F 4 "C17673" H 10600 2600 50  0001 C CNN "LCSC"
+	1    10600 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L pypilot_tinypilot-rescue:R-freetronics_schematic-pypilot_tinypilot-rescue R19
+U 1 1 60CD19A3
+P 10350 2500
+F 0 "R19" H 10400 2450 50  0000 L CNN
+F 1 "4.7k" V 10350 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10421 2409 60  0001 L CNN
+F 3 "" H 10350 2500 60  0000 C CNN
+F 4 "C17673" H 10350 2500 50  0001 C CNN "LCSC"
+	1    10350 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 60CD54A3
+P 9300 2650
+F 0 "#PWR0133" H 9300 2400 50  0001 C CNN
+F 1 "GND" V 9300 2450 50  0001 C CNN
+F 2 "" H 9300 2650 50  0001 C CNN
+F 3 "" H 9300 2650 50  0001 C CNN
+	1    9300 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Regulator_Linear:LP2985-1.8 U8
+U 1 1 60CD5C0B
+P 8850 3500
+F 0 "U8" H 8850 3842 50  0000 C CNN
+F 1 "LP2985-1.8" H 8850 3751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8850 3825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 8850 3500 50  0001 C CNN
+F 4 "C160916" H 8850 3500 50  0001 C CNN "LCSC"
+	1    8850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3400 8450 3500
+Wire Wire Line
+	7950 3400 8450 3400
+Connection ~ 8450 3400
+$Comp
+L power:+3.3V #PWR0149
+U 1 1 60CDA915
+P 7950 3400
+F 0 "#PWR0149" H 7950 3250 50  0001 C CNN
+F 1 "+3.3V" H 8000 3600 50  0000 C CNN
+F 2 "" H 7950 3400 50  0001 C CNN
+F 3 "" H 7950 3400 50  0001 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 60CDB967
+P 7950 3700
+F 0 "#PWR0150" H 7950 3450 50  0001 C CNN
+F 1 "GND" V 7950 3500 50  0001 C CNN
+F 2 "" H 7950 3700 50  0001 C CNN
+F 3 "" H 7950 3700 50  0001 C CNN
+	1    7950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 60CDBCF5
+P 8850 3800
+F 0 "#PWR0151" H 8850 3550 50  0001 C CNN
+F 1 "GND" V 8850 3600 50  0001 C CNN
+F 2 "" H 8850 3800 50  0001 C CNN
+F 3 "" H 8850 3800 50  0001 C CNN
+	1    8850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60CDD36C
+P 9800 3550
+F 0 "C11" H 9915 3596 50  0000 L CNN
+F 1 "2.2uF" H 9915 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9838 3400 50  0001 C CNN
+F 3 "~" H 9800 3550 50  0001 C CNN
+F 4 "C49217" H 9800 3550 50  0001 C CNN "LCSC"
+	1    9800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0152
+U 1 1 60CDE63A
+P 9550 3400
+F 0 "#PWR0152" H 9550 3250 50  0001 C CNN
+F 1 "+1V8" H 9565 3573 50  0000 C CNN
+F 2 "" H 9550 3400 50  0001 C CNN
+F 3 "" H 9550 3400 50  0001 C CNN
+	1    9550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60CE4884
+P 9550 3550
+F 0 "C10" H 9450 3650 50  0000 L CNN
+F 1 ".1uF" H 9350 3450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 3400 50  0001 C CNN
+F 3 "~" H 9550 3550 50  0001 C CNN
+F 4 "C49678" H 9550 3550 50  0001 C CNN "LCSC"
+	1    9550 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60CE6F65
+P 7950 3550
+F 0 "C9" H 8065 3596 50  0000 L CNN
+F 1 "2.2uF" H 8065 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7988 3400 50  0001 C CNN
+F 3 "~" H 7950 3550 50  0001 C CNN
+F 4 "C49217" H 7950 3550 50  0001 C CNN "LCSC"
+	1    7950 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 3400
+Wire Wire Line
+	9250 3400 9550 3400
+Connection ~ 9550 3400
+Wire Wire Line
+	9550 3400 9800 3400
+Wire Wire Line
+	9800 3700 9550 3700
+$Comp
+L power:GND #PWR0153
+U 1 1 60CECBDB
+P 9550 3700
+F 0 "#PWR0153" H 9550 3450 50  0001 C CNN
+F 1 "GND" V 9550 3500 50  0001 C CNN
+F 2 "" H 9550 3700 50  0001 C CNN
+F 3 "" H 9550 3700 50  0001 C CNN
+	1    9550 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 9550 3700
+$Comp
+L power:+1V8 #PWR0154
+U 1 1 60CECF03
+P 9350 2550
+F 0 "#PWR0154" H 9350 2400 50  0001 C CNN
+F 1 "+1V8" H 9365 2723 50  0000 C CNN
+F 2 "" H 9350 2550 50  0001 C CNN
+F 3 "" H 9350 2550 50  0001 C CNN
+	1    9350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2550 9350 2550
+Text GLabel 10800 2750 2    50   Output ~ 0
+SCL
+Text GLabel 10800 2850 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	10800 2850 10600 2850
+Connection ~ 10600 2850
+Wire Wire Line
+	10350 2750 10800 2750
+Connection ~ 10350 2750
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 60CFE938
+P 9600 2750
+F 0 "Q1" V 9850 2750 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 9940 2750 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2850 50  0001 C CNN
+F 3 "~" H 9600 2750 50  0001 C CNN
+F 4 "C255592" V 9600 2750 50  0001 C CNN "LCSC"
+	1    9600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 60CFF789
+P 9950 2650
+F 0 "Q2" V 10200 2650 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 10290 2650 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 2750 50  0001 C CNN
+F 3 "~" H 9950 2650 50  0001 C CNN
+F 4 "C255592" V 9950 2650 50  0001 C CNN "LCSC"
+	1    9950 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2850 9400 2850
+Wire Wire Line
+	9750 2750 9300 2750
+$Comp
+L power:+1V8 #PWR0155
+U 1 1 60D06BC7
+P 9600 2550
+F 0 "#PWR0155" H 9600 2400 50  0001 C CNN
+F 1 "+1V8" H 9615 2723 50  0000 C CNN
+F 2 "" H 9600 2550 50  0001 C CNN
+F 3 "" H 9600 2550 50  0001 C CNN
+	1    9600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0156
+U 1 1 60D06E57
+P 9950 2450
+F 0 "#PWR0156" H 9950 2300 50  0001 C CNN
+F 1 "+1V8" H 9965 2623 50  0000 C CNN
+F 2 "" H 9950 2450 50  0001 C CNN
+F 3 "" H 9950 2450 50  0001 C CNN
+	1    9950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0157
+U 1 1 60D0726C
+P 10350 2250
+F 0 "#PWR0157" H 10350 2100 50  0001 C CNN
+F 1 "+3.3V" H 10500 2300 50  0000 C CNN
+F 2 "" H 10350 2250 50  0001 C CNN
+F 3 "" H 10350 2250 50  0001 C CNN
+	1    10350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0158
+U 1 1 60D07704
+P 10600 2350
+F 0 "#PWR0158" H 10600 2200 50  0001 C CNN
+F 1 "+3.3V" H 10750 2400 50  0000 C CNN
+F 2 "" H 10600 2350 50  0001 C CNN
+F 3 "" H 10600 2350 50  0001 C CNN
+	1    10600 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2850 10600 2850
+Wire Wire Line
+	10150 2750 10350 2750
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 60CDA2BD
+P 9600 4400
+F 0 "J11" H 9680 4346 50  0000 L CNN
+F 1 "Conn_01x02" H 9680 4301 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9600 4400 50  0001 C CNN
+F 3 "~" H 9600 4400 50  0001 C CNN
+	1    9600 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 60CDC578
+P 9500 4200
+F 0 "#PWR0104" H 9500 4050 50  0001 C CNN
+F 1 "+3.3V" H 9350 4300 50  0000 C CNN
+F 2 "" H 9500 4200 50  0001 C CNN
+F 3 "" H 9500 4200 50  0001 C CNN
+	1    9500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0111
+U 1 1 60CDCBF4
+P 9600 4200
+F 0 "#PWR0111" H 9600 4050 50  0001 C CNN
+F 1 "+1V8" H 9750 4300 50  0000 C CNN
+F 2 "" H 9600 4200 50  0001 C CNN
+F 3 "" H 9600 4200 50  0001 C CNN
+	1    9600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J12
+U 1 1 5B6ED9A6
+P 6300 4200
+F 0 "J12" V 6380 4192 50  0001 L CNN
+F 1 "jlx12864" H 6380 4101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6300 4200 50  0001 C CNN
+F 3 "~" H 6300 4200 50  0001 C CNN
+F 4 "C706880" V 6300 4200 50  0001 C CNN "LCSC"
+	1    6300 4200
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

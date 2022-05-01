@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP H11L1
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 1.6mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+$CMP H11L2
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 10mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+$CMP H11L2_copy
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 10mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+$CMP H11L3
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 5mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+$CMP H11L3_copy
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 5mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+$CMP tlp2361
+D Schmitt Trigger Output Optocoupler, High Speed, DIP-6, 1.6mA turn on threshold
+K High Speed Schmitt Optocoupler
+F https://www.fairchildsemi.com/datasheets/H1/H11L1M.pdf
+$ENDCMP
+#
+#End Doc Library

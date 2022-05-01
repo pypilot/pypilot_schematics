@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name uart)(type Legacy)(uri ${KIPRJMOD}/../libraries/uart.lib)(options "")(descr ""))
+  (lib (name freetronics_schematic)(type Legacy)(uri ${KIPRJMOD}/../libraries/freetronics_kicad_library/freetronics_schematic.lib)(options "")(descr ""))
+  (lib (name imu_hat)(type Legacy)(uri ${KIPRJMOD}/imu_hat.lib)(options "")(descr ""))
+  (lib (name rpi)(type Legacy)(uri ${KIPRJMOD}/rpi.lib)(options "")(descr ""))
+  (lib (name amp)(type Legacy)(uri ${KIPRJMOD}/../libraries/amp.lib)(options "")(descr ""))
+  (lib (name arduino_pro_mini)(type Legacy)(uri ${KIPRJMOD}/arduino_pro_mini.lib)(options "")(descr ""))
+  (lib (name usblc6-2sc6-2)(type Legacy)(uri ${KIPRJMOD}/../libraries/usblc6-2sc6-2.lib)(options "")(descr ""))
+  (lib (name IRM-H600JW)(type Legacy)(uri ${KIPRJMOD}/IRM-H600JW.lib)(options "")(descr ""))
+  (lib (name pypilot_hat-rescue)(type Legacy)(uri ${KIPRJMOD}/pypilot_tinypilot-rescue.lib)(options "")(descr ""))
+  (lib (name pypilot_tinypilot-rescue)(type Legacy)(uri ${KIPRJMOD}/pypilot_tinypilot-rescue.lib)(options "")(descr ""))
+)

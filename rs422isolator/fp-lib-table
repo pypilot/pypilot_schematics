@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name rs422isolator)(type KiCad)(uri ${KIPRJMOD}/rs422isolator.pretty)(options "")(descr ""))
+)

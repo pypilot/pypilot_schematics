@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name uart)(type Legacy)(uri ${KIPRJMOD}/../libraries/uart.lib)(options "")(descr ""))
+  (lib (name pypilot_components)(type Legacy)(uri ${KIPRJMOD}/../libraries/pypilot_components.lib)(options "")(descr ""))
+  (lib (name freetronics_schematic)(type Legacy)(uri ${KIPRJMOD}/../libraries/freetronics_kicad_library/freetronics_schematic.lib)(options "")(descr ""))
+  (lib (name highpower_controller-rescue)(type Legacy)(uri ${KIPRJMOD}/highpower_controller-rescue.lib)(options "")(descr ""))
+  (lib (name lmr14030)(type Legacy)(uri ${KIPRJMOD}/lmr14030.lib)(options "")(descr ""))
+)

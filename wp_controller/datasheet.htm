@@ -1,0 +1,68 @@
+<h2>pypilot motor controller</h2>
+
+<img src="">
+
+<p>For brushed DC motors.  Can drive most existing tillerpilots and mechanical wheel pilots.
+<ul>
+  <li>arduino nano with free software</li>
+  <li>all n-fet hbridge: highest efficiency</li>
+  <li>optical data isolation</li>
+  <li>reverse polarity protection</li>
+  <li>software over-current and over-temperature protection</li>
+  <li>10 amp fuse</li>
+  <li>12/24 volt option</li>
+  <li>clutch output option</li>
+</ul>
+
+<table border=1>
+  <tr><td>       </td><td> 12v </td><td> 24v </td></tr>
+  <tr><td>Voltage</td><td>10.5-15v</td><td>11.7-30v</td></tr>
+  <tr><td>Controller Current</td><td>15mA to 22mA</td></tr>
+  <tr><td>Motor Current</td><td>up to 8A</td><td>up to 6.5A</td></tr>
+  <tr><td>Clutch Current</td><td>0-2A</td><td>0-2A</td></tr>
+</table>
+<h6>* Motor current is how many amps the motor draws at maximum speed moving the rudder freely, not stall current.</h6>
+
+<h3>Efficiency</h3>
+<p><img src="controllerefficiency.png" />
+  <h6>* ratio of motor power divided by motor power + controller total consumption</h6>
+    
+<h3>Power Connection</h3>
+Marked red and black.   These attach to the controller with screw terminals.
+
+<h3>Motor Connection</h3>
+The motor connects to terminals marked green.  These may need to be reversed if the autopilot makes corrections in the wrong direction.
+
+<h3>Serial Data Connection</h3>
+<table border=1>
+    <tr><td>1</td><td>2</td><td>3</td><td>purpose</td><tr>raspberry pin</td></tr>
+    <tr><td>Red</td><td>Brown</td><td>Black</td><td>+3.3v</td><td>1</td></tr>
+    <tr><td>Green</td><td>White</td><td>Brown</td><td>tx</td><td>8</td></tr>
+    <tr><td>Blue</td><td>Blue</td><td>Green</td><td>rx</td><td>10</td></tr>
+    <tr><td>Black</td><td>Black</td><td>Blue</td><td>0v, GND</td><td>6, 9</td></tr>
+</table>
+<p>Note: wires colors will be one of 3 possibilities depending on the controller.
+    
+<p><h3>End stops</h3>
+<p>3 wires can be used for optional end stops.  End stops prevent stalling the motor and stress to the drive.
+<p>Black - GND, 0v.
+<p>Yellow/Red - port/starboard stop switches, shorted to ground prevents further movement in that direction.
+  
+<p><h3>Rudder Feedback</h3>
+<p>3 wires are used for optional rudder feedback.
+
+<p>Black - GND
+<p>Yellow - voltage angle, from GND to Vcc
+<p>Red - +5v
+<br>
+A potentiometer with 3 wires can be connected to these 3 wires.
+The potentiomter should range from 1k ohms to 100k ohms.  Recommend 10k.
+<p>
+  A potentiometer with only 2 wires can connect to yellow and black pins.  A resistor should be added from red to yellow of 1k ohms.
+<p>
+  A hall effect sensor with analog output can be connected to these 3 wires.
+<h6>* Controllers Before October 2019 cannot be used with a hall effect rudder feedback without a small modification.</h6>
+
+<p><h3>Motor Temperature Sensor</h3>
+<p>Optional 10k NTC (2 wires) for temperature of the electric motor.
+  <p>This is generally not needed because most motors will not overheat unless stalled for prolonged periods.  It can be used to prevent the motor from overheating and burning out.

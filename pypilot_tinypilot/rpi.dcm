@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RASPBERRY_PI
+D Raspberry Pi revision 2 P1 connector pinout
+K raspberry pi
+$ENDCMP
+#
+#End Doc Library

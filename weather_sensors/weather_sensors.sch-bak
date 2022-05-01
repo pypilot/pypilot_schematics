@@ -1,0 +1,1191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "18 nov 2017"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L weather_sensors-rescue:GND-power #PWR01
+U 1 1 59B82FA0
+P 9150 3500
+F 0 "#PWR01" H 9150 3250 50  0001 C CNN
+F 1 "GND" V 9100 3550 50  0001 R CNN
+F 2 "" H 9150 3500 50  0001 C CNN
+F 3 "" H 9150 3500 50  0001 C CNN
+	1    9150 3500
+	0    1    -1   0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR02
+U 1 1 59B82FC1
+P 3150 3450
+F 0 "#PWR02" H 3150 3200 50  0001 C CNN
+F 1 "GND" H 3300 3400 50  0001 C CNN
+F 2 "" H 3150 3450 50  0001 C CNN
+F 3 "" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR03
+U 1 1 59B83218
+P 2450 6450
+F 0 "#PWR03" H 2450 6200 50  0001 C CNN
+F 1 "GND" H 2500 6500 50  0001 C CNN
+F 2 "" H 2450 6450 50  0001 C CNN
+F 3 "" H 2450 6450 50  0001 C CNN
+	1    2450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:R_PHOTO-Device R2
+U 1 1 59B840B3
+P 7400 1900
+F 0 "R2" V 7470 1946 50  0000 L CNN
+F 1 "10k" V 7400 1850 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical" V 7450 1650 50  0001 L CNN
+F 3 "" H 7400 1850 50  0001 C CNN
+	1    7400 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR05
+U 1 1 59B84682
+P 3050 2250
+F 0 "#PWR05" H 3050 2100 50  0001 C CNN
+F 1 "+3.3V" H 2950 2400 50  0000 C CNN
+F 2 "" H 3050 2250 50  0001 C CNN
+F 3 "" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR07
+U 1 1 59B847B8
+P 9150 3600
+F 0 "#PWR07" H 9150 3450 50  0001 C CNN
+F 1 "+3.3V" V 9250 3600 50  0000 C CNN
+F 2 "" H 9150 3600 50  0001 C CNN
+F 3 "" H 9150 3600 50  0001 C CNN
+	1    9150 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR08
+U 1 1 59B848C1
+P 2550 1350
+F 0 "#PWR08" H 2550 1200 50  0001 C CNN
+F 1 "+5V" H 2650 1450 50  0000 C CNN
+F 2 "" H 2550 1350 50  0001 C CNN
+F 3 "" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR010
+U 1 1 59B84A30
+P 7400 1750
+F 0 "#PWR010" H 7400 1600 50  0001 C CNN
+F 1 "+5V" H 7300 1800 50  0000 C CNN
+F 2 "" H 7400 1750 50  0001 C CNN
+F 3 "" H 7400 1750 50  0001 C CNN
+	1    7400 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R1
+U 1 1 59B84C56
+P 7400 2200
+F 0 "R1" V 7500 2200 50  0000 L CNN
+F 1 "10k" V 7400 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 2200 50  0001 C CNN
+F 3 "" H 7400 2200 50  0001 C CNN
+F 4 "C17414" V 7400 2200 50  0001 C CNN "LCSC"
+	1    7400 2200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2350 6350 2350 7150
+Wire Wire Line
+	2350 7150 1550 7150
+$Comp
+L weather_sensors-rescue:Conn_01x04-Connector_Generic J2
+U 1 1 5A8801C8
+P 9350 3400
+F 0 "J2" H 9430 3392 50  0000 L CNN
+F 1 "Conn_01x04" H 9430 3301 50  0001 L CNN
+F 2 "freetronics_footprints:1X04" H 9350 3400 50  0001 C CNN
+F 3 "~" H 9350 3400 50  0001 C CNN
+F 4 "C124378" H 9350 3400 50  0001 C CNN "LCSC"
+	1    9350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 5F37EE6C
+P 1000 2750
+F 0 "J3" H 1057 3217 50  0000 C CNN
+F 1 "USB_B_Micro" H 1057 3126 50  0000 C CNN
+F 2 "weather_sensors:USB_Mini-B_Tensility_54-00023_Vertical" H 1150 2700 50  0001 C CNN
+F 3 "~" H 1150 2700 50  0001 C CNN
+	1    1000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2750 2750 2750
+Wire Wire Line
+	2750 2850 1300 2850
+$Comp
+L weather_sensors-rescue:GND-power #PWR0101
+U 1 1 5F38447E
+P 1000 3150
+F 0 "#PWR0101" H 1000 2900 50  0001 C CNN
+F 1 "GND" H 1150 3100 50  0001 C CNN
+F 2 "" H 1000 3150 50  0001 C CNN
+F 3 "" H 1000 3150 50  0001 C CNN
+	1    1000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0103
+U 1 1 5F3846B1
+P 3150 2250
+F 0 "#PWR0103" H 3150 2100 50  0001 C CNN
+F 1 "+5V" H 3350 2300 50  0000 C CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F38A06F
+P 4000 2000
+F 0 "D2" V 4100 1900 50  0000 R CNN
+F 1 "LED2" V 4000 1900 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4000 2000 50  0001 C CNN
+F 3 "~" H 4000 2000 50  0001 C CNN
+F 4 "C2296" V 4000 2000 50  0001 C CNN "LCSC"
+	1    4000 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F3B9A13
+P 4350 1350
+F 0 "C1" H 4150 1350 50  0000 L CNN
+F 1 ".1uF" H 4150 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 1200 50  0001 C CNN
+F 3 "~" H 4350 1350 50  0001 C CNN
+F 4 "C49678" H 4350 1350 50  0001 C CNN "LCSC"
+	1    4350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR0109
+U 1 1 5F3BAAA7
+P 4350 1200
+F 0 "#PWR0109" H 4350 1050 50  0001 C CNN
+F 1 "+3.3V" H 4200 1200 50  0000 C CNN
+F 2 "" H 4350 1200 50  0001 C CNN
+F 3 "" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0110
+U 1 1 5F3BAE37
+P 4350 1500
+F 0 "#PWR0110" H 4350 1250 50  0001 C CNN
+F 1 "GND" H 4500 1450 50  0001 C CNN
+F 2 "" H 4350 1500 50  0001 C CNN
+F 3 "" H 4350 1500 50  0001 C CNN
+	1    4350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F3BFCA7
+P 4650 1350
+F 0 "C3" H 4450 1350 50  0000 L CNN
+F 1 ".1uF" H 4450 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 1200 50  0001 C CNN
+F 3 "~" H 4650 1350 50  0001 C CNN
+F 4 "C49678" H 4650 1350 50  0001 C CNN "LCSC"
+	1    4650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0111
+U 1 1 5F3BFF67
+P 4650 1500
+F 0 "#PWR0111" H 4650 1250 50  0001 C CNN
+F 1 "GND" H 4800 1450 50  0001 C CNN
+F 2 "" H 4650 1500 50  0001 C CNN
+F 3 "" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0112
+U 1 1 5F3C0673
+P 4650 1200
+F 0 "#PWR0112" H 4650 1050 50  0001 C CNN
+F 1 "+5V" H 4750 1200 50  0000 C CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "" H 4650 1200 50  0001 C CNN
+	1    4650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0115
+U 1 1 5F41AFD9
+P 10500 4550
+F 0 "#PWR0115" H 10500 4300 50  0001 C CNN
+F 1 "GND" H 10600 4450 50  0001 C CNN
+F 2 "" H 10500 4550 50  0001 C CNN
+F 3 "" H 10500 4550 50  0001 C CNN
+	1    10500 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F448B82
+P 5500 2200
+F 0 "C5" H 5300 2200 50  0000 L CNN
+F 1 ".1uF" H 5300 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 2050 50  0001 C CNN
+F 3 "~" H 5500 2200 50  0001 C CNN
+F 4 "C49678" H 5500 2200 50  0001 C CNN "LCSC"
+	1    5500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0117
+U 1 1 5F44E4C6
+P 9900 7050
+F 0 "#PWR0117" H 9900 6800 50  0001 C CNN
+F 1 "GND" H 10000 6950 50  0001 C CNN
+F 2 "" H 9900 7050 50  0001 C CNN
+F 3 "" H 9900 7050 50  0001 C CNN
+	1    9900 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0118
+U 1 1 5F45351C
+P 5500 2350
+F 0 "#PWR0118" H 5500 2100 50  0001 C CNN
+F 1 "GND" H 5600 2250 50  0001 C CNN
+F 2 "" H 5500 2350 50  0001 C CNN
+F 3 "" H 5500 2350 50  0001 C CNN
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0120
+U 1 1 5F4A4E3B
+P 7400 2350
+F 0 "#PWR0120" H 7400 2100 50  0001 C CNN
+F 1 "GND" H 7500 2250 50  0001 C CNN
+F 2 "" H 7400 2350 50  0001 C CNN
+F 3 "" H 7400 2350 50  0001 C CNN
+	1    7400 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2050 7400 2050
+Connection ~ 7400 2050
+Connection ~ 2350 7150
+Wire Wire Line
+	2700 7150 2350 7150
+$Comp
+L weather_sensors-rescue:GND-power #PWR0108
+U 1 1 5D210935
+P 2700 7250
+F 0 "#PWR0108" H 2700 7000 50  0001 C CNN
+F 1 "GND" H 2500 7200 50  0000 C CNN
+F 2 "" H 2700 7250 50  0001 C CNN
+F 3 "" H 2700 7250 50  0001 C CNN
+	1    2700 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0107
+U 1 1 5D210906
+P 2700 6950
+F 0 "#PWR0107" H 2700 6800 50  0001 C CNN
+F 1 "+5V" H 2850 7000 50  0000 C CNN
+F 2 "" H 2700 6950 50  0001 C CNN
+F 3 "" H 2700 6950 50  0001 C CNN
+	1    2700 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:Conn_01x04-Connector_Generic J4
+U 1 1 5D21084F
+P 2900 7050
+F 0 "J4" H 2980 7042 50  0000 L CNN
+F 1 "wind  sensor input" H 2980 6951 50  0000 L CNN
+F 2 "freetronics_footprints:1X04" H 2900 7050 50  0001 C CNN
+F 3 "~" H 2900 7050 50  0001 C CNN
+	1    2900 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:RJ12-Connector J1
+U 1 1 5A8812B5
+P 3100 6450
+F 0 "J1" H 3050 6550 50  0000 L CNN
+F 1 "RJ12" H 3000 6450 50  0000 L CNN
+F 2 "rj12:RJ12_E" H 3100 6450 50  0001 C CNN
+F 3 "" H 3100 6450 50  0001 C CNN
+	1    3100 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 6650 2700 6650
+Wire Wire Line
+	2250 6550 2700 6550
+Wire Wire Line
+	2700 6350 2350 6350
+Wire Wire Line
+	2450 6450 2700 6450
+$Comp
+L weather_sensors-rescue:+5V-power #PWR09
+U 1 1 59B84927
+P 2600 6650
+F 0 "#PWR09" H 2600 6500 50  0001 C CNN
+F 1 "+5V" H 2650 6600 50  0000 C CNN
+F 2 "" H 2600 6650 50  0001 C CNN
+F 3 "" H 2600 6650 50  0001 C CNN
+	1    2600 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 7050 2250 7050
+Wire Wire Line
+	2250 6550 2250 7050
+$Comp
+L Device:C C7
+U 1 1 5F52ADFF
+P 1650 6100
+F 0 "C7" H 1450 6100 50  0000 L CNN
+F 1 ".1uF" H 1450 6000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1688 5950 50  0001 C CNN
+F 3 "~" H 1650 6100 50  0001 C CNN
+F 4 "C49678" H 1650 6100 50  0001 C CNN "LCSC"
+	1    1650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R6
+U 1 1 5F52EECF
+P 2250 6350
+F 0 "R6" V 2150 6350 50  0000 L CNN
+F 1 "3.3k" V 2250 6250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2180 6350 50  0001 C CNN
+F 3 "" H 2250 6350 50  0001 C CNN
+F 4 "C26010" V 2250 6350 50  0001 C CNN "LCSC"
+	1    2250 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2450 3700 2450
+$Comp
+L Device:LED D3
+U 1 1 5F54A995
+P 4400 2250
+F 0 "D3" V 4500 2150 50  0000 R CNN
+F 1 "LED3" V 4400 2150 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4400 2250 50  0001 C CNN
+F 3 "~" H 4400 2250 50  0001 C CNN
+F 4 "C84256" V 4400 2250 50  0001 C CNN "LCSC"
+	1    4400 2250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10500 6150 2    50   Input ~ 0
+TX
+Text GLabel 10500 6050 2    50   Input ~ 0
+RX
+Text GLabel 3700 2450 2    50   Input ~ 0
+RX
+Text GLabel 4000 2550 2    50   Input ~ 0
+TX
+$Comp
+L weather_sensors-rescue:R-Device R5
+U 1 1 5F5A1E3F
+P 4000 2300
+F 0 "R5" H 4100 2250 50  0000 C CNN
+F 1 "3.3k" V 4000 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3930 2300 50  0001 C CNN
+F 3 "" H 4000 2300 50  0001 C CNN
+F 4 "C26010" V 4000 2300 50  0001 C CNN "LCSC"
+	1    4000 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R13
+U 1 1 5F5C6FE5
+P 4400 2550
+F 0 "R13" H 4550 2500 50  0000 C CNN
+F 1 "3.3k" V 4400 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 2550 50  0001 C CNN
+F 3 "" H 4400 2550 50  0001 C CNN
+F 4 "C26010" V 4400 2550 50  0001 C CNN "LCSC"
+	1    4400 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R4
+U 1 1 59B83EAC
+P 8600 2100
+F 0 "R4" V 8500 2100 50  0000 C CNN
+F 1 "510" V 8600 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8530 2100 50  0001 C CNN
+F 3 "" H 8600 2100 50  0001 C CNN
+F 4 "C17734" V 8600 2100 50  0001 C CNN "LCSC"
+	1    8600 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0113
+U 1 1 5F3E43D8
+P 9150 2000
+F 0 "#PWR0113" H 9150 1750 50  0001 C CNN
+F 1 "GND" H 9250 1900 50  0001 C CNN
+F 2 "" H 9150 2000 50  0001 C CNN
+F 3 "" H 9150 2000 50  0001 C CNN
+	1    9150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR0114
+U 1 1 5F3E43E2
+P 9050 1900
+F 0 "#PWR0114" H 9050 1750 50  0001 C CNN
+F 1 "+3.3V" H 9200 1950 50  0000 C CNN
+F 2 "" H 9050 1900 50  0001 C CNN
+F 3 "" H 9050 1900 50  0001 C CNN
+	1    9050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1900 9300 1900
+$Comp
+L weather_sensors-rescue:Conn_01x08-Connector_Generic J5
+U 1 1 5F3E43F3
+P 9500 1700
+F 0 "J5" H 9600 2000 50  0000 L CNN
+F 1 "jlx12864" V 9600 1250 50  0000 L CNN
+F 2 "freetronics_footprints:1X08" H 9500 1700 50  0001 C CNN
+F 3 "~" H 9500 1700 50  0001 C CNN
+	1    9500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1400 9150 2000
+$Comp
+L weather_sensors-rescue:R-Device R9
+U 1 1 5F3F1575
+P 8100 1500
+F 0 "R9" V 8000 1500 50  0000 C CNN
+F 1 "2.4k" V 8100 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 1500 50  0001 C CNN
+F 3 "" H 8100 1500 50  0001 C CNN
+F 4 "C17526" V 8100 1500 50  0001 C CNN "LCSC"
+	1    8100 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R10
+U 1 1 5F3FCD92
+P 8100 1600
+F 0 "R10" V 8050 1800 50  0000 C CNN
+F 1 "2.4k" V 8100 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 1600 50  0001 C CNN
+F 3 "" H 8100 1600 50  0001 C CNN
+F 4 "C17526" V 8100 1600 50  0001 C CNN "LCSC"
+	1    8100 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R11
+U 1 1 5F40B321
+P 8100 1700
+F 0 "R11" V 8050 1900 50  0000 C CNN
+F 1 "2.4k" V 8100 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 1700 50  0001 C CNN
+F 3 "" H 8100 1700 50  0001 C CNN
+F 4 "C17526" V 8100 1700 50  0001 C CNN "LCSC"
+	1    8100 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R12
+U 1 1 5F40B58A
+P 8100 1800
+F 0 "R12" V 8200 1800 50  0000 C CNN
+F 1 "2.4k" V 8100 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 1800 50  0001 C CNN
+F 3 "" H 8100 1800 50  0001 C CNN
+F 4 "C17526" V 8100 1800 50  0001 C CNN "LCSC"
+	1    8100 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 2100 8450 2100
+Text GLabel 10500 4750 2    50   Input ~ 0
+MISO
+Text GLabel 10500 4850 2    50   Input ~ 0
+SCK
+Text GLabel 7950 1800 0    50   Input ~ 0
+SCK
+Text GLabel 7950 1700 0    50   Input ~ 0
+MOSI
+Text GLabel 10500 4650 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	2250 6550 2250 6500
+Connection ~ 2250 6550
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J6
+U 1 1 60341D61
+P 9450 2900
+F 0 "J6" H 9500 3217 50  0000 C CNN
+F 1 "ISP" H 9500 3126 50  0000 C CNN
+F 2 "pypilot_footprints:ISP" H 9450 2900 50  0001 C CNN
+F 3 "~" H 9450 2900 50  0001 C CNN
+	1    9450 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 2800 0    50   Input ~ 0
+MISO
+Text GLabel 9750 2900 2    50   Input ~ 0
+MOSI
+Text GLabel 9250 2900 0    50   Input ~ 0
+SCK
+Text GLabel 9250 3000 0    50   Input ~ 0
+RESET
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0127
+U 1 1 60341D6B
+P 9750 2800
+F 0 "#PWR0127" H 9750 2650 50  0001 C CNN
+F 1 "+5V" H 9700 2950 50  0000 C CNN
+F 2 "" H 9750 2800 50  0001 C CNN
+F 3 "" H 9750 2800 50  0001 C CNN
+	1    9750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0128
+U 1 1 60341D71
+P 9750 3000
+F 0 "#PWR0128" H 9750 2750 50  0001 C CNN
+F 1 "GND" H 9850 2900 50  0001 C CNN
+F 2 "" H 9750 3000 50  0001 C CNN
+F 3 "" H 9750 3000 50  0001 C CNN
+	1    9750 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 5550 2    50   Input ~ 0
+LEDS
+Text GLabel 3500 1850 0    50   Input ~ 0
+LEDS
+Wire Wire Line
+	4400 1850 4400 2100
+Connection ~ 4000 1850
+Wire Wire Line
+	4000 1850 4400 1850
+Text GLabel 10500 5850 2    50   Input ~ 0
+RESET
+Text GLabel 3950 3150 2    50   Input ~ 0
+RESET
+$Comp
+L Device:C C12
+U 1 1 5FE8C28D
+P 3700 3150
+F 0 "C12" V 3550 3200 50  0000 L CNN
+F 1 ".1uF" V 3550 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3738 3000 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+F 4 "C49678" H 3700 3150 50  0001 C CNN "LCSC"
+	1    3700 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 2850 3650 2850
+Wire Wire Line
+	3850 3150 3950 3150
+Wire Wire Line
+	3500 1850 4000 1850
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5FF1BFD5
+P 4250 5000
+F 0 "J8" H 4330 4992 50  0000 L CNN
+F 1 "touchpad" H 4330 4901 50  0000 L CNN
+F 2 "freetronics_footprints:1X04" H 4250 5000 50  0001 C CNN
+F 3 "~" H 4250 5000 50  0001 C CNN
+F 4 "C180218" H 4250 5000 50  0001 C CNN "LCSC"
+	1    4250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0104
+U 1 1 5FF1C647
+P 4050 5200
+F 0 "#PWR0104" H 4050 4950 50  0001 C CNN
+F 1 "GND" H 4150 5100 50  0001 C CNN
+F 2 "" H 4050 5200 50  0001 C CNN
+F 3 "" H 4050 5200 50  0001 C CNN
+	1    4050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR0105
+U 1 1 5FF1E099
+P 4050 4900
+F 0 "#PWR0105" H 4050 4750 50  0001 C CNN
+F 1 "+3.3V" V 3950 4950 50  0000 C CNN
+F 2 "" H 4050 4900 50  0001 C CNN
+F 3 "" H 4050 4900 50  0001 C CNN
+	1    4050 4900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9300 2000 9150 2000
+Wire Wire Line
+	8750 2100 9300 2100
+Wire Wire Line
+	9150 1400 9300 1400
+Connection ~ 9150 2000
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 600748FB
+P 10300 1950
+F 0 "J9" H 10380 1942 50  0000 L CNN
+F 1 "lcd" H 10380 1851 50  0000 L CNN
+F 2 "freetronics_footprints:1X02" H 10300 1950 50  0001 C CNN
+F 3 "~" H 10300 1950 50  0001 C CNN
+F 4 "" H 10300 1950 50  0001 C CNN "LCSC"
+	1    10300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5FF17A05
+P 10300 1400
+F 0 "J7" H 10380 1392 50  0000 L CNN
+F 1 "lcd" H 10380 1301 50  0000 L CNN
+F 2 "freetronics_footprints:1X02" H 10300 1400 50  0001 C CNN
+F 3 "~" H 10300 1400 50  0001 C CNN
+	1    10300 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 5250 2    50   Input ~ 0
+TEMP
+Wire Wire Line
+	8250 1500 9300 1500
+Wire Wire Line
+	8250 1600 9300 1600
+Wire Wire Line
+	8250 1700 9300 1700
+Wire Wire Line
+	8250 1800 9300 1800
+Wire Wire Line
+	3550 2550 4000 2550
+Wire Wire Line
+	4000 2450 4000 2550
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 6122C43B
+P 2350 1450
+F 0 "Q1" V 2601 1450 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2601 1450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2550 1550 50  0001 C CNN
+F 3 "~" H 2350 1450 50  0001 C CNN
+F 4 "C10487" V 2350 1450 50  0001 C CNN "LCSC"
+	1    2350 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1300 2550 1300 1350
+Wire Wire Line
+	1300 1350 1550 1350
+$Comp
+L Device:C C2
+U 1 1 61240CCF
+P 1850 1500
+F 0 "C2" H 1650 1500 50  0000 L CNN
+F 1 ".1uF" H 1650 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1888 1350 50  0001 C CNN
+F 3 "~" H 1850 1500 50  0001 C CNN
+F 4 "C49678" H 1850 1500 50  0001 C CNN "LCSC"
+	1    1850 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 1350
+Wire Wire Line
+	1850 1350 2150 1350
+Wire Wire Line
+	1850 1650 2350 1650
+Connection ~ 1850 1650
+$Comp
+L weather_sensors-rescue:R-Device R7
+U 1 1 61247474
+P 1550 1500
+F 0 "R7" V 1450 1500 50  0000 L CNN
+F 1 "100k" V 1550 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 1500 50  0001 C CNN
+F 3 "" H 1550 1500 50  0001 C CNN
+F 4 "C17407" V 1550 1500 50  0001 C CNN "LCSC"
+	1    1550 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1350
+Wire Wire Line
+	1550 1350 1850 1350
+Wire Wire Line
+	1550 1650 1850 1650
+$Comp
+L weather_sensors-rescue:R-Device R14
+U 1 1 6124AA4A
+P 1550 1800
+F 0 "R14" V 1450 1800 50  0000 L CNN
+F 1 "20k" V 1550 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 1800 50  0001 C CNN
+F 3 "" H 1550 1800 50  0001 C CNN
+F 4 "C4328" V 1550 1800 50  0001 C CNN "LCSC"
+	1    1550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0102
+U 1 1 612565C8
+P 1550 1950
+F 0 "#PWR0102" H 1550 1700 50  0001 C CNN
+F 1 "GND" H 1700 1900 50  0001 C CNN
+F 2 "" H 1550 1950 50  0001 C CNN
+F 3 "" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1650
+Text GLabel 2700 6250 0    50   Input ~ 0
+TEMP
+$Comp
+L MCU_Microchip_ATmega:ATmega32A-AU U3
+U 1 1 62002E7F
+P 6250 3150
+F 0 "U3" H 6200 2350 50  0000 C CNN
+F 1 "ATmega32A-AU" H 6150 2050 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6250 3150 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 6250 3150 50  0001 C CNN
+F 4 "C5659" H 6250 3150 50  0001 C CNN "LCSC"
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:CH340G U1
+U 1 1 61FFACF6
+P 3150 2850
+F 0 "U1" H 3150 3000 50  0000 C CNN
+F 1 "CH340G" H 3150 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3200 2300 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2800 3650 50  0001 C CNN
+F 4 "C14267" H 3150 2850 50  0001 C CNN "LCSC"
+	1    3150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3050 2750 3050
+Wire Wire Line
+	2750 3250 2550 3250
+$Comp
+L Device:C C4
+U 1 1 620291EA
+P 2000 3200
+F 0 "C4" H 2050 3300 50  0000 L CNN
+F 1 "22pF" H 2050 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2038 3050 50  0001 C CNN
+F 3 "~" H 2000 3200 50  0001 C CNN
+F 4 "C1804" H 2000 3200 50  0001 C CNN "LCSC"
+	1    2000 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 3050 2350 3050
+Connection ~ 2350 3050
+$Comp
+L Device:C C13
+U 1 1 6202D99C
+P 2550 3400
+F 0 "C13" H 2350 3450 50  0000 L CNN
+F 1 "22pF" H 2600 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2588 3250 50  0001 C CNN
+F 3 "~" H 2550 3400 50  0001 C CNN
+F 4 "C1804" H 2550 3400 50  0001 C CNN "LCSC"
+	1    2550 3400
+	-1   0    0    1   
+$EndComp
+Connection ~ 2550 3250
+Wire Wire Line
+	2550 3250 2350 3250
+$Comp
+L weather_sensors-rescue:GND-power #PWR0106
+U 1 1 6202DD00
+P 2250 3550
+F 0 "#PWR0106" H 2250 3300 50  0001 C CNN
+F 1 "GND" H 2400 3500 50  0001 C CNN
+F 2 "" H 2250 3550 50  0001 C CNN
+F 3 "" H 2250 3550 50  0001 C CNN
+	1    2250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3550 2450 3550
+Wire Wire Line
+	2000 3550 2000 3350
+Connection ~ 2250 3550
+Wire Wire Line
+	2250 3550 2000 3550
+Wire Wire Line
+	2250 3150 2250 3550
+Wire Wire Line
+	2450 3150 2450 3550
+Connection ~ 2450 3550
+Wire Wire Line
+	2450 3550 2250 3550
+Wire Wire Line
+	5650 2050 5500 2050
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0119
+U 1 1 5F457DA2
+P 6250 800
+F 0 "#PWR0119" H 6250 650 50  0001 C CNN
+F 1 "+5V" H 6265 973 50  0000 C CNN
+F 2 "" H 6250 800 50  0001 C CNN
+F 3 "" H 6250 800 50  0001 C CNN
+	1    6250 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5F55231C
+P 6350 900
+F 0 "FB1" H 6450 946 50  0000 L CNN
+F 1 "bead" H 6450 855 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 6280 900 50  0001 C CNN
+F 3 "~" H 6350 900 50  0001 C CNN
+F 4 "C1017" H 6350 900 50  0001 C CNN "LCSC"
+	1    6350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5F5562CC
+P 6500 1150
+F 0 "C9" V 6450 1000 50  0000 L CNN
+F 1 ".1uF" V 6450 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6538 1000 50  0001 C CNN
+F 3 "~" H 6500 1150 50  0001 C CNN
+F 4 "C49678" H 6500 1150 50  0001 C CNN "LCSC"
+	1    6500 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 800  6250 800 
+Wire Wire Line
+	6250 800  6250 1150
+Connection ~ 6250 800 
+$Comp
+L weather_sensors-rescue:GND-power #PWR0126
+U 1 1 5F5615CA
+P 5650 1100
+F 0 "#PWR0126" H 5650 850 50  0001 C CNN
+F 1 "GND" H 5750 1000 50  0001 C CNN
+F 2 "" H 5650 1100 50  0001 C CNN
+F 3 "" H 5650 1100 50  0001 C CNN
+	1    5650 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1000 6350 1150
+$Comp
+L Device:C C6
+U 1 1 5F56D208
+P 5500 950
+F 0 "C6" H 5300 950 50  0000 L CNN
+F 1 "1uF" H 5300 850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 800 50  0001 C CNN
+F 3 "~" H 5500 950 50  0001 C CNN
+F 4 "C28323" H 5500 950 50  0001 C CNN "LCSC"
+	1    5500 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1100 5650 1100
+Connection ~ 5650 1100
+Wire Wire Line
+	5650 1100 5800 1100
+Connection ~ 5800 800 
+Wire Wire Line
+	5800 800  6250 800 
+Wire Wire Line
+	5500 800  5800 800 
+$Comp
+L Device:C C8
+U 1 1 5F5609FD
+P 5800 950
+F 0 "C8" H 5600 950 50  0000 L CNN
+F 1 ".1uF" H 5600 1050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 800 50  0001 C CNN
+F 3 "~" H 5800 950 50  0001 C CNN
+F 4 "C49678" H 5800 950 50  0001 C CNN "LCSC"
+	1    5800 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0125
+U 1 1 5F5596FC
+P 6650 1150
+F 0 "#PWR0125" H 6650 900 50  0001 C CNN
+F 1 "GND" H 6750 1050 50  0001 C CNN
+F 2 "" H 6650 1150 50  0001 C CNN
+F 3 "" H 6650 1150 50  0001 C CNN
+	1    6650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U2
+U 1 1 5F3D0C93
+P 9900 5550
+F 0 "U2" H 9750 5650 50  0000 C CNN
+F 1 "ATmega328P-AU" H 9850 4850 50  0000 C CNN
+F 2 "" H 9900 5550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 9900 5550 50  0001 C CNN
+	1    9900 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 1150
+Connection ~ 5350 1600
+Connection ~ 5350 1900
+Connection ~ 5250 1750
+Wire Wire Line
+	5250 1800 5250 1750
+Wire Wire Line
+	5450 1800 5250 1800
+Wire Wire Line
+	5050 1750 5050 1900
+Connection ~ 5050 1750
+Wire Wire Line
+	5250 1750 5050 1750
+Wire Wire Line
+	5350 1650 5350 1600
+Wire Wire Line
+	5350 1850 5350 1900
+$Comp
+L Device:Crystal_GND24_Small Y2
+U 1 1 5FF1E0F7
+P 5350 1750
+F 0 "Y2" V 5350 1700 50  0000 L CNN
+F 1 "16mhz" V 5350 1450 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 5350 1750 50  0001 C CNN
+F 3 "~" H 5350 1750 50  0001 C CNN
+F 4 " C13738" V 5350 1750 50  0001 C CNN "LCSC"
+	1    5350 1750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5050 1900
+$Comp
+L weather_sensors-rescue:GND-power #PWR0116
+U 1 1 5F4467EF
+P 5050 1900
+F 0 "#PWR0116" H 5050 1650 50  0001 C CNN
+F 1 "GND" H 5150 1800 50  0001 C CNN
+F 2 "" H 5050 1900 50  0001 C CNN
+F 3 "" H 5050 1900 50  0001 C CNN
+	1    5050 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1600 5050 1750
+$Comp
+L Device:C C10
+U 1 1 5F443159
+P 5200 1600
+F 0 "C10" V 5300 1650 50  0000 L CNN
+F 1 "22pF" V 5150 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5238 1450 50  0001 C CNN
+F 3 "~" H 5200 1600 50  0001 C CNN
+F 4 "C1804" H 5200 1600 50  0001 C CNN "LCSC"
+	1    5200 1600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5F44038C
+P 5200 1900
+F 0 "C11" V 5350 1900 50  0000 L CNN
+F 1 "22pF" V 5300 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5238 1750 50  0001 C CNN
+F 3 "~" H 5200 1900 50  0001 C CNN
+F 4 "C1804" H 5200 1900 50  0001 C CNN "LCSC"
+	1    5200 1900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5650 1900 5350 1900
+Wire Wire Line
+	5350 1600 5650 1600
+Wire Wire Line
+	5450 1800 5450 1750
+Wire Wire Line
+	5650 1900 5650 1850
+Wire Wire Line
+	5650 1600 5650 1650
+Text GLabel 8150 2100 0    50   Input ~ 0
+BL
+Text GLabel 10500 4450 2    50   Input ~ 0
+BL
+Text GLabel 7950 1500 0    50   Input ~ 0
+RST
+Text GLabel 10500 6750 2    50   Input ~ 0
+RST
+Text GLabel 7950 1600 0    50   Input ~ 0
+DC
+Text GLabel 10500 4350 2    50   Input ~ 0
+DC
+Text GLabel 6850 1450 2    50   Input ~ 0
+TEMP
+Text GLabel 6850 3550 2    50   Input ~ 0
+LEDS
+Wire Wire Line
+	2250 5950 2250 6200
+Wire Wire Line
+	1650 5950 2250 5950
+$Comp
+L weather_sensors-rescue:GND-power #PWR0121
+U 1 1 62146895
+P 1650 6250
+F 0 "#PWR0121" H 1650 6000 50  0001 C CNN
+F 1 "GND" H 1750 6150 50  0001 C CNN
+F 2 "" H 1650 6250 50  0001 C CNN
+F 3 "" H 1650 6250 50  0001 C CNN
+	1    1650 6250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6850 4850 2    50   Input ~ 0
+RST
+Text GLabel 5650 1450 0    50   Input ~ 0
+RESET
+Text GLabel 6850 2350 2    50   Input ~ 0
+DC
+Text GLabel 6850 2450 2    50   Input ~ 0
+BL
+Text GLabel 1350 5950 0    50   Input ~ 0
+DIR
+Wire Wire Line
+	1350 5950 1650 5950
+Connection ~ 1650 5950
+Text GLabel 1550 7150 0    50   Input ~ 0
+SPEED
+Text GLabel 10500 6250 2    50   Input ~ 0
+SPEED
+Text GLabel 9300 4650 0    50   Input ~ 0
+DIR
+$Comp
+L weather_sensors-rescue:GND-power #PWR0122
+U 1 1 621ABEE7
+P 3550 8200
+F 0 "#PWR0122" H 3550 7950 50  0001 C CNN
+F 1 "GND" H 3650 8100 50  0001 C CNN
+F 2 "" H 3550 8200 50  0001 C CNN
+F 3 "" H 3550 8200 50  0001 C CNN
+	1    3550 8200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 3050 2    50   Input ~ 0
+SCK
+Text GLabel 6850 2950 2    50   Input ~ 0
+MISO
+Text GLabel 6850 2850 2    50   Input ~ 0
+MOSI
+Text GLabel 6850 4150 2    50   Input ~ 0
+RX
+Text GLabel 6850 4250 2    50   Input ~ 0
+TX
+Text GLabel 6850 3250 2    50   Input ~ 0
+SCL
+Text GLabel 6850 3350 2    50   Input ~ 0
+SDA
+Text GLabel 10500 5750 2    50   Input ~ 0
+SCL
+Text GLabel 9150 3400 0    50   Input ~ 0
+SCL
+Text GLabel 9150 3300 0    50   Input ~ 0
+SDA
+Text GLabel 10500 5650 2    50   Input ~ 0
+SDA
+$Comp
+L weather_sensors-rescue:GND-power #PWR0123
+U 1 1 62212117
+P 6250 5150
+F 0 "#PWR0123" H 6250 4900 50  0001 C CNN
+F 1 "GND" H 6350 5050 50  0001 C CNN
+F 2 "" H 6250 5150 50  0001 C CNN
+F 3 "" H 6250 5150 50  0001 C CNN
+	1    6250 5150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4050 5000 0    50   Input ~ 0
+TP1
+Text GLabel 4050 5100 0    50   Input ~ 0
+TP2
+Text GLabel 6850 4650 2    50   Input ~ 0
+TP1
+Text GLabel 6850 4750 2    50   Input ~ 0
+TP2
+Text GLabel 10500 6550 2    50   Input ~ 0
+TP1
+Text GLabel 10500 6650 2    50   Input ~ 0
+TP2
+Text GLabel 6850 2150 2    50   Input ~ 0
+DIR
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 62021B00
+P 2350 3150
+F 0 "Y1" V 2304 3294 50  0000 L CNN
+F 1 "12mhz" V 2395 3294 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2350 3150 50  0001 C CNN
+F 3 "~" H 2350 3150 50  0001 C CNN
+F 4 "C9002" V 2350 3150 50  0001 C CNN "LCSC"
+	1    2350 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR?
+U 1 1 6217DBB9
+P 4400 2700
+F 0 "#PWR?" H 4400 2450 50  0001 C CNN
+F 1 "GND" H 4550 2650 50  0001 C CNN
+F 2 "" H 4400 2700 50  0001 C CNN
+F 3 "" H 4400 2700 50  0001 C CNN
+	1    4400 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 4350 2    50   Input ~ 0
+SPEED
+$EndSCHEMATC

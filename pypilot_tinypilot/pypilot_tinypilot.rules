@@ -1,0 +1,98 @@
+
+(rules PCB pypilot_tinypilot
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 295)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 254.0)
+    (clear 200.2)
+    (clear 127.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_3100:3000_um"
+    (shape
+      (circle F.Cu 3100.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 3100.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_3100:3000_um" "Via[0-1]_3100:3000_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_3100:3000_um-kicad_default" "Via[0-1]_3100:3000_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(J4-Pad2)" "Net-(J4-Pad3)" "Net-(C2-Pad1)" GND "LCD_LED" +3V3 SCK MOSI
+    "LCD_DC" "LCD_RESET" "LCD_CE" "Net-(J4-Pad4)" +5V "Net-(J5-Pad5)" "Net-(J5-Pad6)" "Net-(J7-Pad1)"
+    "Net-(J6-Pad8)" "Net-(J6-Pad10)" "Net-(J6-Pad7)" "Net-(J6-Pad9)" SCL SDA "Net-(J6-Pad32)" AUTO
+    SELECT +1 "-1" MENU "Net-(J6-Pad20)" MISO "AR_SS" "Net-(R4-Pad2)"
+    "ID_SD" "Net-(J3-Pad1)" "Net-(U7-Pad1)" "Net-(U7-Pad2)" "Net-(U7-Pad3)" "Net-(U7-Pad4)" "Net-(U7-Pad7)" "Net-(U7-Pad8)"
+    "Net-(U7-Pad9)" "Net-(U7-Pad10)" "Net-(U7-Pad11)" "Net-(U7-Pad12)" "Net-(U7-Pad19)" "Net-(U7-Pad20)" "AR_RST" "Net-(U7-Pad24)"
+    +10 "-10" "Net-(J6-Pad33)" DATA DER "Net-(R10-Pad1)" "ID_SC" "Net-(J6-Pad30)"
+    "Net-(J6-Pad34)" "Net-(J6-Pad35)" "Net-(J6-Pad37)" "Net-(J6-Pad38)" "Net-(J6-Pad40)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

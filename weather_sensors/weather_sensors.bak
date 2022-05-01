@@ -1,0 +1,503 @@
+EESchema Schematic File Version 4
+LIBS:weather_sensors-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "18 nov 2017"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L weather_sensors-rescue:GND-power #PWR01
+U 1 1 59B82FA0
+P 1800 3100
+F 0 "#PWR01" H 1800 2850 50  0001 C CNN
+F 1 "GND" V 1750 3150 50  0000 R CNN
+F 2 "" H 1800 3100 50  0001 C CNN
+F 3 "" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR02
+U 1 1 59B82FC1
+P 3400 4300
+F 0 "#PWR02" H 3400 4050 50  0001 C CNN
+F 1 "GND" H 3600 4250 50  0000 C CNN
+F 2 "" H 3400 4300 50  0001 C CNN
+F 3 "" H 3400 4300 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR03
+U 1 1 59B83218
+P 2150 3850
+F 0 "#PWR03" H 2150 3600 50  0001 C CNN
+F 1 "GND" H 2200 3900 50  0000 C CNN
+F 2 "" H 2150 3850 50  0001 C CNN
+F 3 "" H 2150 3850 50  0001 C CNN
+	1    2150 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR04
+U 1 1 59B83AAB
+P 5000 2700
+F 0 "#PWR04" H 5000 2450 50  0001 C CNN
+F 1 "GND" H 5100 2600 50  0000 C CNN
+F 2 "" H 5000 2700 50  0001 C CNN
+F 3 "" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R4
+U 1 1 59B83EAC
+P 4600 2600
+F 0 "R4" V 4600 2600 50  0000 C CNN
+F 1 "25" V 4700 2600 50  0000 C CNN
+F 2 "freetronics_footprints:RES_AXIAL_400MIL" V 4530 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:R_PHOTO-Device R2
+U 1 1 59B840B3
+P 2400 3100
+F 0 "R2" V 2470 3146 50  0000 L CNN
+F 1 "R_PHOTO" V 2400 3050 50  0000 L CNN
+F 2 "Opto-Devices:Resistor_LDR_7x6_RM5.1" V 2450 2850 50  0001 L CNN
+F 3 "" H 2400 3050 50  0001 C CNN
+	1    2400 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR05
+U 1 1 59B84682
+P 3550 1400
+F 0 "#PWR05" H 3550 1250 50  0001 C CNN
+F 1 "+3.3V" H 3565 1573 50  0000 C CNN
+F 2 "" H 3550 1400 50  0001 C CNN
+F 3 "" H 3550 1400 50  0001 C CNN
+	1    3550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR06
+U 1 1 59B84764
+P 4950 2500
+F 0 "#PWR06" H 4950 2350 50  0001 C CNN
+F 1 "+3.3V" H 4850 2450 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR07
+U 1 1 59B847B8
+P 1800 3200
+F 0 "#PWR07" H 1800 3050 50  0001 C CNN
+F 1 "+3.3V" V 1900 3200 50  0000 C CNN
+F 2 "" H 1800 3200 50  0001 C CNN
+F 3 "" H 1800 3200 50  0001 C CNN
+	1    1800 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR08
+U 1 1 59B848C1
+P 3400 1400
+F 0 "#PWR08" H 3400 1250 50  0001 C CNN
+F 1 "+5V" H 3415 1573 50  0000 C CNN
+F 2 "" H 3400 1400 50  0001 C CNN
+F 3 "" H 3400 1400 50  0001 C CNN
+	1    3400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR09
+U 1 1 59B84927
+P 2000 4050
+F 0 "#PWR09" H 2000 3900 50  0001 C CNN
+F 1 "+5V" H 2050 4000 50  0000 C CNN
+F 2 "" H 2000 4050 50  0001 C CNN
+F 3 "" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR010
+U 1 1 59B84A30
+P 2200 3100
+F 0 "#PWR010" H 2200 2950 50  0001 C CNN
+F 1 "+5V" V 2100 3150 50  0000 C CNN
+F 2 "" H 2200 3100 50  0001 C CNN
+F 3 "" H 2200 3100 50  0001 C CNN
+	1    2200 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR011
+U 1 1 59B84AC7
+P 2600 3600
+F 0 "#PWR011" H 2600 3350 50  0001 C CNN
+F 1 "GND" H 2450 3600 50  0000 C CNN
+F 2 "" H 2600 3600 50  0001 C CNN
+F 3 "" H 2600 3600 50  0001 C CNN
+	1    2600 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:R-Device R1
+U 1 1 59B84C56
+P 2600 3400
+F 0 "R1" V 2670 3446 50  0000 L CNN
+F 1 "10k" V 2600 3350 50  0000 L CNN
+F 2 "freetronics_footprints:RES_AXIAL_400MIL" V 2530 3400 50  0001 C CNN
+F 3 "" H 2600 3400 50  0001 C CNN
+	1    2600 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR013
+U 1 1 59D91281
+P 4150 2150
+F 0 "#PWR013" H 4150 1900 50  0001 C CNN
+F 1 "GND" H 4150 2200 50  0000 C CNN
+F 2 "" H 4150 2150 50  0001 C CNN
+F 3 "" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2800 3800
+Wire Wire Line
+	1750 2900 2700 2900
+Wire Wire Line
+	3400 4300 3400 4250
+Wire Wire Line
+	3550 1400 3550 1550
+Wire Wire Line
+	3400 1400 3400 1550
+Wire Wire Line
+	2450 3200 2700 3200
+Wire Wire Line
+	2150 3850 1900 3850
+Wire Wire Line
+	1900 3750 2350 3750
+Wire Wire Line
+	2350 3750 2350 4550
+Wire Wire Line
+	2350 4550 4250 4550
+Wire Wire Line
+	4250 4550 4250 3300
+Wire Wire Line
+	4250 3300 4100 3300
+Wire Wire Line
+	2450 3950 1900 3950
+Wire Wire Line
+	4500 2250 4100 2250
+Wire Wire Line
+	4100 2050 4400 2050
+Wire Wire Line
+	4400 2050 4400 2400
+Wire Wire Line
+	5000 2700 5200 2700
+Wire Wire Line
+	4950 2500 5200 2500
+Wire Wire Line
+	4300 2550 4100 2550
+Wire Wire Line
+	4250 2650 4100 2650
+Wire Wire Line
+	4900 2000 5200 2000
+Wire Wire Line
+	4750 2600 5200 2600
+Wire Wire Line
+	4100 2450 4350 2450
+Wire Wire Line
+	4350 2450 4350 2600
+Wire Wire Line
+	2000 4050 1900 4050
+Wire Wire Line
+	1800 3200 1750 3200
+Wire Wire Line
+	1750 3100 1800 3100
+Wire Wire Line
+	2550 3100 2600 3100
+Wire Wire Line
+	2600 3100 2700 3100
+Wire Wire Line
+	2250 3100 2200 3100
+Wire Wire Line
+	2600 3250 2600 3100
+Connection ~ 2600 3100
+Wire Wire Line
+	2600 3550 2600 3600
+Wire Wire Line
+	4150 2150 4100 2150
+Wire Wire Line
+	1900 3650 2150 3650
+Wire Wire Line
+	2150 3650 2150 3850
+Wire Wire Line
+	2450 3950 2450 3200
+Wire Wire Line
+	5200 2300 4900 2300
+Wire Wire Line
+	4500 2250 4500 2300
+Wire Wire Line
+	5200 2200 4900 2200
+Wire Wire Line
+	4500 2200 4300 2200
+Wire Wire Line
+	4300 2200 4300 2550
+Wire Wire Line
+	4900 2400 5200 2400
+$Comp
+L arduino:arduino_mini U1
+U 1 1 5A87FE70
+P 3400 2700
+F 0 "U1" H 3200 1700 70  0000 C CNN
+F 1 "arduino_mini" H 3400 928 70  0000 C CNN
+F 2 "DIL20" H 3400 814 60  0001 C CNN
+F 3 "" H 3400 2700 60  0001 C CNN
+	1    3400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:Conn_01x04-Connector_Generic J2
+U 1 1 5A8801C8
+P 1550 3000
+F 0 "J2" H 1630 2992 50  0000 L CNN
+F 1 "Conn_01x04" H 1630 2901 50  0001 L CNN
+F 2 "freetronics_footprints:1X04" H 1550 3000 50  0001 C CNN
+F 3 "~" H 1550 3000 50  0001 C CNN
+	1    1550 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:RJ12-Connector J1
+U 1 1 5A8812B5
+P 1500 3850
+F 0 "J1" V 1652 4338 50  0000 L CNN
+F 1 "RJ12" V 1561 4338 50  0000 L CNN
+F 2 "rj12:RJ12_E" H 1500 3850 50  0001 C CNN
+F 3 "" H 1500 3850 50  0001 C CNN
+	1    1500 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L weather_sensors-rescue:Conn_01x08-Connector_Generic J7
+U 1 1 5A881536
+P 5400 2300
+F 0 "J7" H 5480 2292 50  0000 L CNN
+F 1 "Conn_01x08" H 5480 2201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5400 2300 50  0001 C CNN
+F 3 "~" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2600 4350 2600
+Wire Wire Line
+	4500 2400 4400 2400
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5CA26F9F
+P 5250 3150
+F 0 "J6" H 5329 3192 50  0000 L CNN
+F 1 "Sensor" H 5329 3101 50  0000 L CNN
+F 2 "freetronics_footprints:1X03" H 5250 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0101
+U 1 1 5CA26FE7
+P 5050 3250
+F 0 "#PWR0101" H 5050 3000 50  0001 C CNN
+F 1 "GND" H 5150 3150 50  0000 C CNN
+F 2 "" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:SW_PUSHBUTTON SW1
+U 1 1 5CA2A4DB
+P 4450 2800
+F 0 "SW1" H 4200 2850 50  0000 C CNN
+F 1 "PAGE" H 4450 2750 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4450 2800 60  0001 C CNN
+F 3 "" H 4450 2800 60  0000 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2750 4100 2800
+Wire Wire Line
+	4100 2800 4150 2800
+$Comp
+L weather_sensors-rescue:GND-power #PWR0102
+U 1 1 5CA2BE76
+P 4750 3000
+F 0 "#PWR0102" H 4750 2750 50  0001 C CNN
+F 1 "GND" H 4850 2900 50  0000 C CNN
+F 2 "" H 4750 3000 50  0001 C CNN
+F 3 "" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3000 4750 2800
+$Comp
+L weather_sensors-rescue:+3.3V-power #PWR0103
+U 1 1 5CA2CE6A
+P 1200 2900
+F 0 "#PWR0103" H 1200 2750 50  0001 C CNN
+F 1 "+3.3V" V 1300 2900 50  0000 C CNN
+F 2 "" H 1200 2900 50  0001 C CNN
+F 3 "" H 1200 2900 50  0001 C CNN
+	1    1200 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0104
+U 1 1 5CA2CE8D
+P 1200 2800
+F 0 "#PWR0104" H 1200 2550 50  0001 C CNN
+F 1 "GND" V 1150 2850 50  0000 R CNN
+F 2 "" H 1200 2800 50  0001 C CNN
+F 3 "" H 1200 2800 50  0001 C CNN
+	1    1200 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5CA4854C
+P 4850 3450
+F 0 "J5" H 4929 3492 50  0000 L CNN
+F 1 "Output" H 4929 3401 50  0000 L CNN
+F 2 "freetronics_footprints:1X03" H 4850 3450 50  0001 C CNN
+F 3 "~" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0106
+U 1 1 5CA48552
+P 4650 3550
+F 0 "#PWR0106" H 4650 3300 50  0001 C CNN
+F 1 "GND" H 4750 3450 50  0000 C CNN
+F 2 "" H 4650 3550 50  0001 C CNN
+F 3 "" H 4650 3550 50  0001 C CNN
+	1    4650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3450 4650 3450
+Wire Wire Line
+	5050 3150 4100 3150
+Wire Wire Line
+	4100 3150 4100 3100
+$Comp
+L weather_sensors-rescue:Conn_01x04-Connector_Generic J4
+U 1 1 5D21084F
+P 1700 4450
+F 0 "J4" H 1780 4442 50  0000 L CNN
+F 1 "wind  sensor input" H 1780 4351 50  0000 L CNN
+F 2 "freetronics_footprints:1X04" H 1700 4450 50  0001 C CNN
+F 3 "~" H 1700 4450 50  0001 C CNN
+	1    1700 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:+5V-power #PWR0107
+U 1 1 5D210906
+P 1900 4350
+F 0 "#PWR0107" H 1900 4200 50  0001 C CNN
+F 1 "+5V" H 2050 4400 50  0000 C CNN
+F 2 "" H 1900 4350 50  0001 C CNN
+F 3 "" H 1900 4350 50  0001 C CNN
+	1    1900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L weather_sensors-rescue:GND-power #PWR0108
+U 1 1 5D210935
+P 1900 4650
+F 0 "#PWR0108" H 1900 4400 50  0001 C CNN
+F 1 "GND" H 1700 4600 50  0000 C CNN
+F 2 "" H 1900 4650 50  0001 C CNN
+F 3 "" H 1900 4650 50  0001 C CNN
+	1    1900 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4550 2350 4550
+Connection ~ 2350 4550
+Wire Wire Line
+	1900 4450 2450 4450
+Wire Wire Line
+	2450 4450 2450 3950
+Connection ~ 2450 3950
+Wire Wire Line
+	5200 2100 5000 2100
+Wire Wire Line
+	5000 2100 5000 2700
+Connection ~ 5000 2700
+Wire Wire Line
+	4900 2000 4900 2100
+Wire Wire Line
+	4250 2100 4250 2650
+Wire Wire Line
+	4250 2100 4500 2100
+$Comp
+L freetronics_schematic:R_PACK4 R5
+U 1 1 5D247B30
+P 4700 2450
+F 0 "R5" H 4700 2916 40  0000 C CNN
+F 1 "R_PACK4" H 4700 2916 40  0001 C CNN
+F 2 "FT:RES_CAY16" H 4700 2250 39  0001 C CNN
+F 3 "" H 4700 2450 60  0000 C CNN
+	1    4700 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4550 3000
+Wire Wire Line
+	4550 3000 4550 3450
+Wire Wire Line
+	4100 3200 4350 3200
+$Comp
+L weather_sensors-rescue:R-Device R6
+U 1 1 5D288AE5
+P 4350 3950
+F 0 "R6" V 4350 3950 50  0000 C CNN
+F 1 "0" V 4450 3950 50  0000 C CNN
+F 2 "freetronics_footprints:RES_AXIAL_400MIL" V 4280 3950 50  0001 C CNN
+F 3 "" H 4350 3950 50  0001 C CNN
+	1    4350 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3800 4350 3200
+Wire Wire Line
+	4350 4100 4350 4450
+Wire Wire Line
+	4350 4450 2450 4450
+Connection ~ 2450 4450
+Wire Wire Line
+	1750 3000 2700 3000
+$EndSCHEMATC

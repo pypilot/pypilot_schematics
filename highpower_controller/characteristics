@@ -1,0 +1,5 @@
+sleep 3.8ma
+active 7ma
+switching 22.5 ma
+full drive on 9ma
+clutch pwm 0.5ma
