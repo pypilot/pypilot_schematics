@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name pypilot_remote_rf)(type KiCad)(uri ${KIPRJMOD}/pypilot_remote_rf.pretty)(options "")(descr ""))
+)
